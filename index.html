@@ -1,0 +1,694 @@
+<!doctype html><html lang="ru"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Портфолио Алихана Тасбулатова</title><meta name="description" content="Алихан Тасбулатов: продюсер рекламы и AI-креатор, Алматы"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,700..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"><style id="css">/* Layout: one column like a production sheet. Header with contacts, then one block per piece: title, logline, media, a take log beside notes. Owner-only edit mode on top. */
+:root{
+  --bg:#EEF0F2; --surface:#FFFFFF; --ink:#101114; --muted:#5B606A; --line:#D5D9DF;
+  --accent:#2B3FE0; --accent-ink:#FFFFFF; --accent-soft:#E2E6FC; --frame:#0B0C0E; --photo:#FFFFFF;
+  --font-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --font-body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E0F12; --surface:#16181C; --ink:#ECEEF2; --muted:#9BA1AC; --line:#2A2D33;
+    --accent:#8C99FF; --accent-ink:#0B0C10; --accent-soft:#1C2140; --frame:#000000; --photo:#1C1E22;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E0F12; --surface:#16181C; --ink:#ECEEF2; --muted:#9BA1AC; --line:#2A2D33;
+  --accent:#8C99FF; --accent-ink:#0B0C10; --accent-soft:#1C2140; --frame:#000000; --photo:#1C1E22;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-block:40px 72px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));display:grid;gap:64px}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,video:focus-visible,.z:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+p{margin:0}
+figure{margin:0}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1,h2{font-family:var(--font-display);font-stretch:125%;font-weight:850;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h1{font-size:clamp(34px,6.2vw,64px);line-height:.98}
+h2{font-size:clamp(24px,3.4vw,34px);line-height:1.05}
+h3{font-size:15px;font-weight:600;margin:0}
+
+/* header */
+.top{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:32px;align-items:end}
+.intro{display:grid;gap:16px}
+.lede{font-size:18px;max-width:60ch}
+.contact{display:grid;gap:10px;padding:18px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.crow{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.crow .k{font-family:var(--font-mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.crow .v{font-weight:500;word-break:break-word;text-align:right}
+.copy{font:inherit;font-family:var(--font-mono);font-size:12px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:2px 10px;cursor:pointer;margin-left:6px}
+.copy:hover{border-color:var(--accent);color:var(--accent)}
+.note{font-size:14px;color:var(--muted)}
+.stats{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 28px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--font-mono);font-size:13px;color:var(--muted)}
+.stats b{color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
+
+/* piece */
+.piece{display:grid;gap:22px}
+.phead{display:grid;gap:8px;max-width:76ch}
+.logline{font-size:17px}
+.tag{display:inline-flex;gap:6px;flex-wrap:wrap}
+.tag span{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+
+.reel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.clip{display:grid;gap:10px;min-width:0;align-content:start}
+.clip .cap{display:grid;gap:2px}
+.clip .cap .k{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.clip .cap q{font-size:14.5px;font-style:italic;quotes:"\201C" "\201D"}
+.clip .cap .d{font-size:13.5px;color:var(--muted);line-height:1.35}
+.vstrip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.vstrip .clip .cap{min-height:3.4em;align-content:start}
+video{display:block;width:100%;max-width:100%;border-radius:var(--r);background:var(--frame);box-shadow:0 0 0 1px var(--line)}
+.v916{aspect-ratio:9/16;object-fit:cover}
+.v169{aspect-ratio:16/9;object-fit:cover}
+
+.sheet{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px}
+.log{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;display:grid;gap:8px;margin:0}
+.log .row{display:grid;grid-template-columns:6.6rem minmax(0,1fr);gap:18px}
+.log dt{font-family:var(--font-mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+.log dd{margin:0;font-size:14.5px}
+.fix{display:grid;gap:10px;align-content:start}
+.fix ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:14.5px}
+.fix h3{font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* photo rows */
+.who,.board figcaption{font-family:var(--font-mono);font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.lb{display:grid;gap:20px}
+.lbrow{display:grid;gap:8px;min-width:0}
+.pairs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.pair{display:grid;gap:6px;min-width:0}
+.pair .two{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.pair figcaption{font-size:14px;font-weight:500}
+.strip{display:grid;grid-template-columns:repeat(var(--n,8),minmax(0,1fr));gap:8px}
+.z{display:block;padding:0;border:0;background:none;cursor:zoom-in;min-width:0;border-radius:10px}
+.ph{display:block;width:100%;height:auto;aspect-ratio:640/1146;object-fit:cover;border-radius:10px;background:var(--photo);box-shadow:0 0 0 1px var(--line)}
+.ph.sq{object-fit:contain;background:#FFFFFF}
+
+/* wardrobe */
+.wardrobe{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:18px;align-items:start}
+.board{display:grid;gap:8px}
+.board img{width:100%;height:auto;border-radius:var(--r);box-shadow:0 0 0 1px var(--line);background:#fff}
+.rows{display:grid;gap:14px;min-width:0}
+.lrow{display:grid;gap:6px;min-width:0}
+.looks{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.looks img{width:100%;aspect-ratio:600/1075;object-fit:cover;border-radius:10px;background:#fff;box-shadow:0 0 0 1px var(--line)}
+.looks .empty{border-radius:10px;border:1px dashed var(--line);aspect-ratio:600/1075;display:grid;place-items:center;font-family:var(--font-mono);font-size:11px;color:var(--muted);text-align:center;padding:6px}
+
+/* offer */
+.offer{display:grid;gap:12px;padding:24px;border-radius:var(--r);background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 25%,transparent)}
+.offer p{font-size:17px;max-width:68ch}
+.cta{display:inline-flex;align-items:center;padding:10px 18px;border-radius:999px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;font-size:15px}
+.cta:hover{opacity:.92}
+.offerline{padding:12px 16px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;max-width:80ch}
+.offerline p{font-size:15.5px}
+
+/* next */
+.next{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:center;padding:16px;border:1px dashed var(--line);border-radius:var(--r)}
+.next img{width:72px;aspect-ratio:9/16;object-fit:cover;border-radius:8px;background:#fff}
+.next .txt{display:grid;gap:4px}
+
+/* method */
+.method{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.method .m{padding:16px 18px;border-top:2px solid var(--ink);display:grid;gap:6px;align-content:start}
+.method .m p{font-size:15px;color:var(--muted)}
+.method .m h3{font-size:16px}
+
+.before{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:start}
+.vlinks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.vlinks li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:8px;flex-wrap:wrap}
+.vlinks .role{font-family:var(--font-mono);font-size:12px;color:var(--muted)}
+
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer .fr{display:flex;gap:18px;flex-wrap:wrap}
+
+/* lightbox */
+.lbx{border:0;padding:0;background:transparent;max-width:min(92vw,1280px);max-height:92vh}
+.lbx::backdrop{background:rgba(8,9,12,.82)}
+.lbx img{display:block;max-width:100%;max-height:88vh;width:auto;height:auto;border-radius:12px;margin:0 auto}
+.lbx button{position:fixed;top:14px;right:14px;font:500 13px var(--font-mono);background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
+.lbv{max-width:none;overflow:visible}
+.lbv video{width:min(92vw, calc(80vh * var(--ar,1.7778)));max-width:none;height:auto;aspect-ratio:var(--ar,1.7778);border-radius:12px;background:#000;box-shadow:none}
+.lbv .lbt{margin:8px 2px 0;font:500 12px var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:#E8EAEE;text-align:center}
+
+/* steppe throne: frames first, then the spot beside its log */
+.ph.wd{aspect-ratio:16/9}
+.solo{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:18px;align-items:start}
+.solo .sheet{grid-template-columns:1fr}
+
+/* archive: uniform 16:9 contact sheet, verticals sit on a blurred copy of their own frame */
+.arch{display:grid;gap:18px}
+.agroup{display:grid;gap:8px;min-width:0}
+.agrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.agrid.g3 .vtile{grid-column:span 2}
+.vtile{display:grid;gap:6px;min-width:0;margin:0;align-content:start}
+.vtile figcaption{font-size:13px;line-height:1.3;color:var(--muted)}
+.vt{position:relative;display:block;width:100%;aspect-ratio:16/9;padding:0;border:0;border-radius:10px;overflow:hidden;background:var(--frame);cursor:pointer;box-shadow:0 0 0 1px var(--line)}
+.vt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.vt.vert img.fg{object-fit:contain}
+.vt img.blur{filter:blur(14px) brightness(.55);transform:scale(1.2)}
+.vt .dur{position:absolute;left:6px;bottom:6px;display:inline-flex;align-items:center;gap:5px;font:500 11px var(--font-mono);letter-spacing:.04em;color:#fff;background:rgba(0,0,0,.6);border-radius:999px;padding:2px 8px 2px 7px}
+.vt .dur::before{content:"";border-style:solid;border-width:4px 0 4px 7px;border-color:transparent transparent transparent currentColor}
+.vt:hover .dur,.vt:focus-visible .dur{background:var(--accent);color:var(--accent-ink)}
+body.editing .vt{cursor:default}
+
+/* owner edit mode (controls exist only for viewers who can edit) */
+body:not(.editing) [data-off]{display:none!important}
+body.editing [data-off]{opacity:.35}
+body:not(.editing) [data-k]:empty{display:none}
+body.editing [data-k]:empty{display:inline-block;min-width:3em;min-height:1.2em}
+body.editing [data-k]{outline:1px dashed color-mix(in srgb,var(--accent) 50%,transparent);outline-offset:2px;border-radius:3px;cursor:text}
+body.editing [data-k]:focus{outline:2px solid var(--accent);background:var(--accent-soft)}
+body.editing [data-h]{position:relative}
+body.editing .z{cursor:default}
+.edctl{position:absolute;top:-10px;right:-6px;z-index:5;display:flex;gap:4px}
+.edctl button,.edbar button{font:500 12px var(--font-mono);border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:3px 9px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.edctl button:hover,.edbar button:hover{border-color:var(--accent);color:var(--accent)}
+.edbar{position:fixed;right:max(16px, env(safe-area-inset-right, 0px));bottom:16px;z-index:20;display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100vw - 32px)}
+.edbar .primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.edbar .primary:hover{color:var(--accent-ink);opacity:.9}
+.edbar .msg{font:12px var(--font-mono);color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+.edbar[hidden]{display:none}
+
+@media (max-width:860px){
+  .top,.sheet,.wardrobe,.before,.method{grid-template-columns:1fr}
+  .reel{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:min(72vw,300px);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+  .reel .clip{scroll-snap-align:start}
+  .vstrip{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:min(42vw,200px);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+  .vstrip .clip{scroll-snap-align:start}
+  .looks,.strip{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:minmax(96px,27vw);overflow-x:auto;padding-bottom:4px}
+  .strip.wide{grid-auto-columns:min(70vw,300px)}
+  .solo{grid-template-columns:1fr}
+  .solo video{max-width:340px}
+  .agrid{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:min(62vw,260px);overflow-x:auto;padding-bottom:6px}
+  .agrid.g3 .vtile{grid-column:auto}
+  .pairs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .crow .v{text-align:left}
+  .log .row{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
+</style><main class="wrap"><header class="top"><div class="intro"><span data-k="hdr.eyebrow" class="eyebrow"></span><h1 data-k="hdr.h1">Меня зовут Алихан, и я</h1><p data-k="hdr.lede" class="lede">делаю AI-рекламу, видео и фото, которая выдерживает соседство с настоящей съёмкой. Шесть лет продюсировал рекламу для KFC, Burger King и HONOR и привык планировать готовый ролик до генерации. Теперь веду всю цепочку сам, от хука до мастера.</p></div><aside class="contact" aria-label="Контакты"><div class="crow"><span class="k">Telegram</span><span class="v"><a href="https://t.me/rarealmatysnowflake" target="_blank" rel="noopener">@rarealmatysnowflake</a></span></div><div class="crow"><span class="k">Email</span><span class="v"><span id="mail">alikhan.tasbulatov@hotmail.com</span><button class="copy" type="button" data-copy="mail">Копировать</button></span></div><div class="crow"><span class="k">LinkedIn</span><span class="v"><a href="https://www.linkedin.com/in/alikhan-tasbulatov-0a4715241" target="_blank" rel="noopener">alikhan-tasbulatov</a></span></div><p data-k="hdr.note" class="note">Работы сделаны для вымышленных брендов (AY, TAMSHY, SAULE, KYR), чтобы показать подход. Персонажи сгенерированы, все взрослые.</p></aside><div class="stats"><span data-h="st1"><b data-k="st1.n">3</b> <span data-k="st1.t">постоянных AI-креатора (можно добавить под бренд)</span></span><span data-h="st2" data-off><b data-k="st2.n">3 из 4</b> <span data-k="st2.t">клипов Doll Day годные с первого дубля</span></span><span data-h="st3"><b data-k="st3.n">7 из 7</b> <span data-k="st3.t">клипов совпали со сценарием с первого дубля</span></span><span data-h="st4"><b data-k="st4.n">14 из 14</b> <span data-k="st4.t">шагов гардероба с первого дубля</span></span><span data-h="st5"><b data-k="st5.n">−14 LUFS</b> <span data-k="st5.t">мастера и автоматический QC</span></span></div></header><section class="offer" aria-labelledby="h-offer" data-sec="offer" data-h="sec.offer"><span data-k="offer.e" class="eyebrow">Для брендов</span><h2 data-k="offer.h" id="h-offer">Создадим AI-моделей под ваш бренд</h2><p data-k="offer.p">Подбираем внешность под вашу аудиторию и закрепляем лицо: модель остаётся узнаваемой во всех съёмках и роликах. На ней делаем фото и видео в стиле и айдентике бренда: палитра, свет, шрифты, тон и ваши вещи по пэкшотам.</p><span data-h="offer.ctax"><a data-k="offer.cta" class="cta" href="https://t.me/rarealmatysnowflake" target="_blank" rel="noopener">Обсудить в Telegram</a></span></section><section class="piece" aria-labelledby="h-maya" data-sec="maya" data-h="sec.maya"><div class="phead"><span class="tag"><span data-k="maya.tag1">UGC</span><span data-k="maya.tag2">Один креатор, три категории</span><span data-k="maya.tag3">Maya</span></span><h2 data-k="maya.h" id="h-maya">Maya, три продукта</h2><p data-k="maya.log" class="logline">Один AI-креатор в уходе, напитках и одежде, и в каждом ролике свой UGC-формат: первая реакция, день из жизни, примерка.</p></div><div class="reel"><figure class="clip" data-h="maya.a"><div class="cap"><span data-k="maya.a.k" class="k">Сыворотка SAULE · первая реакция</span><q data-k="maya.a.q">Ten-step routine? Not in Almaty. One drop.</q></div><video class="v916" src="media/maya_saule.mp4" poster="media/maya_saule_poster.jpg" controls playsinline preload="none" aria-label="Maya, сыворотка SAULE"></video></figure><figure class="clip" data-h="maya.b"><div class="cap"><span data-k="maya.b.k" class="k">TAMSHY · день из жизни</span><q data-k="maya.b.q">Three p.m. meeting got cancelled. Celebrating responsibly.</q></div><video class="v916" src="media/maya_tamshy.mp4" poster="media/maya_tamshy_poster.jpg" controls playsinline preload="none" aria-label="Maya, TAMSHY"></video></figure><figure class="clip" data-h="maya.c"><div class="cap"><span data-k="maya.c.k" class="k">Рубашка KYR · примерка</span><q data-k="maya.c.q">Five-two. Does an oversized overshirt eat me? Let's see.</q></div><video class="v916" src="media/maya_overshirt.mp4" poster="media/maya_overshirt_poster.jpg" controls playsinline preload="none" aria-label="Maya, рубашка KYR"></video></figure></div><div class="sheet"><dl class="log"><div class="row" data-h="maya.row1"><dt data-k="maya.dt1">Креатор</dt><dd data-k="maya.dd1">Одно лицо Soul ID и один голос на все три ролика</dd></div><div class="row" data-h="maya.row2"><dt data-k="maya.dt2">Видео</dt><dd data-k="maya.dd2">Seedance 2.5, 720p, 12…13 с каждый</dd></div><div class="row" data-h="maya.row3"><dt data-k="maya.dt3">Дубли</dt><dd data-k="maya.dd3">4 генерации на 3 ролика</dd></div><div class="row" data-h="maya.row4"><dt data-k="maya.dt4">Рынки</dt><dd data-k="maya.dd4">Английский; русская озвучка записана для всех трёх и написана под рынок, а не переведена</dd></div></dl><div class="fix"><h3 data-k="maya.fh"></h3><ul><li data-h="maya.fi1" data-off><span data-k="maya.f1">В примерке телефон висел в воздухе: переснял с камерой на штативе.</span></li><li data-h="maya.fi2" data-off><span data-k="maya.f2">Модель нарисовала реальный логотип на ноутбуке: убрал на посте, в промптах теперь устройства без бренда.</span></li></ul></div></div></section><section class="piece" aria-labelledby="h-mb" data-sec="mb" data-h="sec.mb"><div class="phead"><span class="tag"><span data-k="mb.tag1">Трендовый ролик</span><span data-k="mb.tag2">30 с</span><span data-k="mb.tag3">Maya</span></span><h2 data-k="mb.h" id="h-mb">Model Behavior</h2><p data-k="mb.log" class="logline">AI-модель устала от хаотичного монтажа, забирает курсор у пользователя, сама режиссирует съёмку и выходит из телефона в реальный мир, всё ещё в одежде клиента.</p></div><div class="offerline" data-h="mb.offerx"><p data-k="mb.offer">Такой ролик соберём под ваш бренд. Креатив разрабатываем вместе: идею, сценарий и образы согласуем с вами до генерации, дальше вы утверждаете ключевые кадры и черновики.</p></div><video class="v169" src="media/model_behavior_ru.mp4" poster="media/model_behavior_ru_poster.jpg" controls playsinline preload="none" aria-label="Model Behavior, 16:9"></video><div class="sheet"><dl class="log"><div class="row" data-h="mb.row1"><dt data-k="mb.dt1">Видео</dt><dd data-k="mb.dd1">16 генераций Seedance 2.5: 10 черновиков в 480p, 6 финализированы в 1080p; ни одного брака</dd></div><div class="row" data-h="mb.row2"><dt data-k="mb.dt2">Кадры</dt><dd data-k="mb.dd2">45 ключевых кадров и ассетов, 6 в брак</dd></div><div class="row" data-h="mb.row3"><dt data-k="mb.dt3">Монтаж</dt><dd data-k="mb.dd3">Слой интерфейса собран как HTML-страница, отрендерен покадрово и сведён в ffmpeg</dd></div><div class="row" data-h="mb.row4"><dt data-k="mb.dt4">Версии</dt><dd data-k="mb.dd4">Русская и английская; 9:16, 16:9 и соцверсия 22 с</dd></div></dl><div class="fix"><h3 data-k="mb.fh">Самый сложный шот</h3><ul><li data-h="mb.fi1"><span data-k="mb.f1">Выход из вертикального телефона в полный рост: форсированная перспектива с совпадающими стартовым и финальным кадром, с первого дубля.</span></li></ul></div></div></section><section class="piece" aria-labelledby="h-wd" data-sec="wardrobe" data-h="sec.wardrobe"><div class="phead"><span class="tag"><span data-k="wd.tag1">Консистентность</span><span data-k="wd.tag2">Nano Banana Pro</span><span data-k="wd.tag3">Maya · Vera · Leo</span></span><h2 data-k="wd.h" id="h-wd">Капсула гардероба</h2><p data-k="wd.log" class="logline">Шестнадцать вымышленных вещей и цепочки образов для трёх персонажей: за шаг меняется одна вещь, лицо не меняется никогда.</p></div><div class="wardrobe"><figure class="board"><img src="media/capsule_board.jpg" alt="Доска из 16 вымышленных вещей: блейзер, тренч, футболка, свитер, брюки, джинсы, лоферы, кеды, пуховик, бомбер, кардиган, поло, юбка, красные кеды, сумка-полумесяц, мини-сумка" loading="lazy" width="1200" height="1200"><figcaption data-k="wd.cap">Капсула: 16 пэкшотов</figcaption></figure><div class="rows"><div class="lrow"><span class="who">Maya</span><div class="looks"><img src="media/look_maya_1.jpg" alt="Maya, образ 1: ультрамариновый пуховик и сумка-полумесяц" loading="lazy"><img src="media/look_maya_2.jpg" alt="Maya, образ 2: изумрудная юбка в складку" loading="lazy"><img src="media/look_maya_3.jpg" alt="Maya, образ 3: красные кеды" loading="lazy"><img src="media/look_maya_4.jpg" alt="Maya, образ 4: голубая мини-сумка" loading="lazy"><span data-k="wd.empty" class="empty">1 вещь за шаг</span></div></div><div class="lrow"><span class="who">Vera</span><div class="looks"><img src="media/look_vera_0.jpg" alt="Vera, базовый образ: тренч и джинсы" loading="lazy"><img src="media/look_vera_1.jpg" alt="Vera, образ 1: томатный бомбер" loading="lazy"><img src="media/look_vera_2.jpg" alt="Vera, образ 2: мятное поло" loading="lazy"><img src="media/look_vera_3.jpg" alt="Vera, образ 3: изумрудная юбка" loading="lazy"><img src="media/look_vera_4.jpg" alt="Vera, образ 4: красные кеды" loading="lazy"></div></div><div class="lrow"><span class="who">Leo</span><div class="looks"><img src="media/look_leo_0.jpg" alt="Leo, базовый образ: кремовый свитер с косами" loading="lazy"><img src="media/look_leo_1.jpg" alt="Leo, образ 1: мятное поло" loading="lazy"><img src="media/look_leo_2.jpg" alt="Leo, образ 2: тренч" loading="lazy"><img src="media/look_leo_3.jpg" alt="Leo, образ 3: светлые джинсы" loading="lazy"><img src="media/look_leo_4.jpg" alt="Leo, образ 4: ультрамариновый пуховик" loading="lazy"></div></div></div></div><div class="sheet"><dl class="log"><div class="row" data-h="wd.row1"><dt data-k="wd.dt1">Метод</dt><dd data-k="wd.dd1">Правка предыдущего кадра, остальное без изменений, одна вещь заменяется по её пэкшоту как второму референсу; после каждого шага лицо возвращается к базовому кадру. Ваши реальные вещи переносим так же, по одной-двум фотографиям</dd></div><div class="row" data-h="wd.row2"><dt data-k="wd.dt2">Итог</dt><dd data-k="wd.dd2">41 генерация; 14 из 14 шагов цепочек годные с первого дубля</dd></div><div class="row" data-h="wd.row3" data-off><dt data-k="wd.dt3"></dt><dd data-k="wd.dd3"></dd></div></dl><div class="fix"><h3 data-k="wd.fh">Зачем это рекламе</h3><ul><li data-h="wd.fi1"><span data-k="wd.f1">Один персонаж носит всю линейку клиента через всю кампанию и не плывёт.</span></li><li data-h="wd.fi2"><span data-k="wd.f2">Замена одной вещи: дешёвая правка, а не новая съёмка или новая генерация человека.</span></li></ul></div></div></section><section class="piece" aria-labelledby="h-gj" data-sec="gj" data-h="sec.gj"><div class="phead"><span class="tag"><span data-k="gj.tag1">Fashion</span><span data-k="gj.tag2">Genjutsu Lite</span><span data-k="gj.tag3">Vera · Maya × AY</span></span><h2 data-k="gj.h" id="h-gj">Трендовые шаблоны</h2><p data-k="gj.log" class="logline">Берём трендовый ролик-шаблон Higgsfield и ставим в него нашу модель, наши образы и сумку AY одной генерацией. Хореография, тайминг и монтаж тренда сохраняются.</p></div><div class="reel"><figure class="clip" data-h="gj.a"><div class="cap"><span data-k="gj.a.k" class="k">Rugside Outfit Swap · Vera</span><span data-k="gj.a.d" class="d">4 образа, смена за лопастью вентилятора</span></div><video class="v916" src="media/new/gj_rug.mp4" poster="media/new/gj_rug_poster.jpg" controls playsinline preload="none" aria-label="Rugside Outfit Swap, Vera"></video></figure><figure class="clip" data-h="gj.b"><div class="cap"><span data-k="gj.b.k" class="k">Street Style Swap · Maya</span><span data-k="gj.b.d" class="d">Проход по улице с сумкой AY</span></div><video class="v916" src="media/new/gj_st.mp4" poster="media/new/gj_st_poster.jpg" controls playsinline preload="none" aria-label="Street Style Swap, Maya"></video></figure><figure class="clip" data-h="gj.c"><div class="cap"><span data-k="gj.c.k" class="k">Fashion Film Strut · Vera</span><span data-k="gj.c.d" class="d">Fashion-ролик с крупными планами</span></div><video class="v916" src="media/new/gj_ff.mp4" poster="media/new/gj_ff_poster.jpg" controls playsinline preload="none" aria-label="Fashion Film Strut, Vera"></video></figure></div><div class="sheet"><dl class="log"><div class="row" data-h="gj.row1"><dt data-k="gj.dt1">Рефы</dt><dd data-k="gj.dd1">Головы из сета персонажа, образы без головы, финальный образ в полный рост с сумкой и пэкшот сумки</dd></div><div class="row" data-h="gj.row2"><dt data-k="gj.dt2">Проверка</dt><dd data-k="gj.dd2">Лицо сверяем с портретом персонажа покадрово, с шагом 0,1 с</dd></div><div class="row" data-h="gj.row3"><dt data-k="gj.dt3">Итог</dt><dd data-k="gj.dd3">3 шаблона: 2 приняты с первой генерации, 1 доведён монтажом</dd></div></dl><div class="fix"><h3 data-k="gj.fh">Зачем это бренду</h3><ul><li data-h="gj.fi1"><span data-k="gj.f1">Тренд можно подхватить, пока он в рекомендациях: с вашей моделью и вашим продуктом, за одну генерацию.</span></li><li data-h="gj.fi2"><span data-k="gj.f2">Знаем ограничения: крупные планы с поворотом головы уводят лицо, поэтому выбираем шаблоны со средними планами и жёсткими сменами.</span></li></ul></div></div></section><section class="piece" aria-labelledby="h-cb" data-sec="cb" data-h="sec.cb"><div class="phead"><span class="tag"><span data-k="cb.tag1">UGC без реплик</span><span data-k="cb.tag2">Смена масштаба</span><span data-k="cb.tag3">Leo × TAMSHY</span></span><h2 data-k="cb.h" id="h-cb">Cannonball</h2><p data-k="cb.log" class="logline">Парню слишком жарко для чая: он наливает стакан TAMSHY, разбегается через всю кухню и прыгает в него бомбочкой. Немой гэг на смене масштаба, три хука на одно тело.</p></div><div class="reel"><figure class="clip" data-h="cb.a"><div class="cap"><span data-k="cb.a.k" class="k">Хук A · взгляд</span><span data-k="cb.a.d" class="d">Стакан к объективу, глаза в камеру</span></div><video class="v916" src="media/new/cb_a.mp4" poster="media/new/cb_a_poster.jpg" controls playsinline preload="none" aria-label="Cannonball, hook A"></video></figure><figure class="clip" data-h="cb.b"><div class="cap"><span data-k="cb.b.k" class="k">Хук B · подпись</span><span data-k="cb.b.d" class="d">«Too hot for tea.»</span></div><video class="v916" src="media/new/cb_b.mp4" poster="media/new/cb_b_poster.jpg" controls playsinline preload="none" aria-label="Cannonball, hook B"></video></figure><figure class="clip" data-h="cb.c"><div class="cap"><span data-k="cb.c.k" class="k">Хук C · банка первой</span><span data-k="cb.c.d" class="d">Налив TAMSHY в стакан</span></div><video class="v916" src="media/new/cb_c.mp4" poster="media/new/cb_c_poster.jpg" controls playsinline preload="none" aria-label="Cannonball, hook C"></video></figure></div><div class="sheet"><dl class="log"><div class="row" data-h="cb.row1"><dt data-k="cb.dt1">Референс</dt><dd data-k="cb.dd1">Трендовый ролик со сменой масштаба разобран по 14 кадрам; ключевые кадры одной кухней в Nano Banana</dd></div><div class="row" data-h="cb.row2"><dt data-k="cb.dt2">Видео</dt><dd data-k="cb.dd2">9 клипов Kling 4.0 в 1080p и контрольная сцена Seedance 2.5 с апскейлом</dd></div><div class="row" data-h="cb.row3"><dt data-k="cb.dt3">Монтаж</dt><dd data-k="cb.dd3">Разбег ускорен в 1,5 раза, прыжок в 1,3; стык клипов двух моделей спрятан выравниванием кадра и наплывом 0,2 с; музыка Epidemic Sound, звуки всплеска</dd></div><div class="row" data-h="cb.row4"><dt data-k="cb.dt4">Сдача</dt><dd data-k="cb.dd4">Хуки A, B, C в 9:16, 19…22 с, −14 LUFS, автоматический QC пройден</dd></div></dl><div class="fix"><h3 data-k="cb.fh">Зачем это бренду</h3><ul><li data-h="cb.fi1"><span data-k="cb.f1">Продукт стоит в кадре весь ролик этикеткой к камере, а гэг держит внимание без слов, на любом языке.</span></li><li data-h="cb.fi2"><span data-k="cb.f2">Три хука на одно тело: тестируете начало, а не весь ролик.</span></li></ul></div></div></section><section class="piece" aria-labelledby="h-sp" data-sec="sp" data-h="sec.sp"><div class="phead"><span class="tag"><span data-k="sp.tag1">UGC</span><span data-k="sp.tag2">3 варианта хука</span><span data-k="sp.tag3">Leo × TAMSHY</span></span><h2 data-k="sp.h" id="h-sp">Sorry, Pitcher</h2><p data-k="sp.log" class="logline">Камера в холодильнике. Парень, который тайно скучает по газировке, находит банку игристого абрикосового чая за кувшином холодного чая. Одно тело ролика, три разных начала для теста.</p></div><div class="reel"><figure class="clip" data-h="sp.a"><div class="cap"><span data-k="sp.a.k" class="k">Хук A</span><q data-k="sp.a.q">Fizzy tea. Good or weird?</q></div><video class="v916" src="media/sp_a.mp4" poster="media/sp_a_poster.jpg" controls playsinline preload="none" aria-label="Sorry, Pitcher, хук A"></video></figure><figure class="clip" data-h="sp.b"><div class="cap"><span data-k="sp.b.k" class="k">Хук B</span><q data-k="sp.b.q">Check behind the pitcher</q></div><video class="v916" src="media/sp_b.mp4" poster="media/sp_b_poster.jpg" controls playsinline preload="none" aria-label="Sorry, Pitcher, хук B"></video></figure><figure class="clip" data-h="sp.c"><div class="cap"><span data-k="sp.c.k" class="k">Хук C</span><q data-k="sp.c.q">Apricot tea. With actual fizz.</q></div><video class="v916" src="media/sp_c.mp4" poster="media/sp_c_poster.jpg" controls playsinline preload="none" aria-label="Sorry, Pitcher, хук C"></video></figure></div><div class="sheet"><dl class="log"><div class="row" data-h="sp.row1"><dt data-k="sp.dt1">Формат</dt><dd data-k="sp.dd1">Креатор в камеру, статичная камера в холодильнике, 22,7…25 с; сдача в 9:16 и 4:5</dd></div><div class="row" data-h="sp.row2"><dt data-k="sp.dt2">Голос</dt><dd data-k="sp.dd2">Создан в ElevenLabs и утверждён на слух до любого видео</dd></div><div class="row" data-h="sp.row3"><dt data-k="sp.dt3">Видео</dt><dd data-k="sp.dd3">Seedance 2.5 с ключевым кадром, листом персонажа, продуктом и утверждённым голосом в референсах; черновики 480p, затем те же дубли в 1080p</dd></div><div class="row" data-h="sp.row4"><dt data-k="sp.dt4">Дубли</dt><dd data-k="sp.dd4">7 клипов, 7 годных с первого дубля; распознавание речи совпало со сценарием во всех 7</dd></div><div class="row" data-h="sp.row5"><dt data-k="sp.dt5">Пост</dt><dd data-k="sp.dd5">Монтажная спецификация на каждый мастер: субтитры по два слова, карточка хука, энд-кард, −14 LUFS; автоматический QC пройден на всех 6 мастерах</dd></div></dl><div class="fix"><h3 data-k="sp.fh"></h3><ul><li data-h="sp.fi1" data-off><span data-k="sp.f1">Скачок непрерывности на склейке хука и тела (банка снова на полке): хуки перерезаны в монтаже.</span></li><li data-h="sp.fi2" data-off><span data-k="sp.f2">Прозрачная стеклянная полка показывала одну руку дважды, на колене и на банке. Замаскировал под матовое стекло на посте; «никаких отражающих поверхностей в промптах» теперь правило моей лаборатории хуков.</span></li></ul></div></div></section><section class="piece" aria-labelledby="h-one" data-sec="one" data-h="sec.one"><div class="phead"><span class="tag"><span data-k="one.tag1">Fashion</span><span data-k="one.tag2">Outfit Switch</span><span data-k="one.tag3">Vera × AY</span></span><h2 data-k="one.h" id="h-one">The One</h2><p data-k="one.log" class="logline">Vera меняет образ на каждый бит, а сумка AY остаётся. Образы из капсулы гардероба оживают по одному ключевому кадру: белая циклорама, один план в полный рост, своя поза на каждый образ.</p></div><div class="vstrip"><figure class="clip" data-h="one.k1"><div class="cap"><span data-k="one.k1.k" class="k">K1 · тренч</span><span data-k="one.k1.d" class="d">Шаг к камере, ладонь на сумке</span></div><video class="v916" src="media/one/k1.mp4" poster="media/one/k1_poster.jpg" controls muted loop playsinline preload="none" aria-label="The One, K1, тренч"></video></figure><figure class="clip" data-h="one.k2"><div class="cap"><span data-k="one.k2.k" class="k">K2 · бомбер</span><span data-k="one.k2.d" class="d">Оглядывается через плечо</span></div><video class="v916" src="media/one/k2.mp4" poster="media/one/k2_poster.jpg" controls muted loop playsinline preload="none" aria-label="The One, K2, бомбер"></video></figure><figure class="clip" data-h="one.k3"><div class="cap"><span data-k="one.k3.k" class="k">K3 · плиссе</span><span data-k="one.k3.d" class="d">Полуоборот, складки раскрываются</span></div><video class="v916" src="media/one/k3.mp4" poster="media/one/k3_poster.jpg" controls muted loop playsinline preload="none" aria-label="The One, K3, плиссе"></video></figure><figure class="clip" data-h="one.k4"><div class="cap"><span data-k="one.k4.k" class="k">K4 · красные кеды</span><span data-k="one.k4.d" class="d">Шаг к камере, кеды ведут кадр</span></div><video class="v916" src="media/one/k4.mp4" poster="media/one/k4_poster.jpg" controls muted loop playsinline preload="none" aria-label="The One, K4, красные кеды"></video></figure><figure class="clip" data-h="one.k5" data-off><div class="cap"><span data-k="one.k5.k" class="k">K5 · мини-сумка</span><span data-k="one.k5.d" class="d">Не та сумка: взгляд в объектив</span></div><video class="v916" src="media/one/k5.mp4" poster="media/one/k5_poster.jpg" controls muted loop playsinline preload="none" aria-label="The One, K5, мини-сумка"></video></figure><figure class="clip" data-h="one.c"><div class="cap"><span data-k="one.c.k" class="k">Хук C · макро</span><span data-k="one.c.d" class="d">Коньячная кожа и латунные кольца</span></div><video class="v916" src="media/one/c.mp4" poster="media/one/c_poster.jpg" controls muted loop playsinline preload="none" aria-label="The One, хук C, макро сумки"></video></figure><figure class="clip" data-h="one.k5a" data-off><div class="cap"><span data-k="one.k5a.k" class="k">K5 · дубль 1</span><span data-k="one.k5a.d" class="d">Первый дубль</span></div><video class="v916" src="media/one/k5_t1.mp4" poster="media/one/k5_t1_poster.jpg" controls muted loop playsinline preload="none" aria-label="The One, K5, дубль 1"></video></figure><figure class="clip" data-h="one.k5b" data-off><div class="cap"><span data-k="one.k5b.k" class="k">K5 · дубль 2</span><span data-k="one.k5b.d" class="d">Второй дубль</span></div><video class="v916" src="media/one/k5_t2.mp4" poster="media/one/k5_t2_poster.jpg" controls muted loop playsinline preload="none" aria-label="The One, K5, дубль 2"></video></figure></div><div class="sheet"><dl class="log"><div class="row" data-h="one.row1"><dt data-k="one.dt1">Кадры</dt><dd data-k="one.dd1">Ключевые кадры K1…K5 из цепочки образов Vera (Nano Banana Pro): лицо и сумка зафиксированы, за шаг меняется одна вещь</dd></div><div class="row" data-h="one.row2"><dt data-k="one.dt2">Видео</dt><dd data-k="one.dd2">Seedance 2.5: черновики 480p, финал 720p, 4…6 с на образ. Клипы без звука: бит и звук ставятся в монтаже</dd></div><div class="row" data-h="one.row3"><dt data-k="one.dt3">Сумка</dt><dd data-k="one.dd3">Строка PRODUCT TRUTH в каждом промпте: форма, цвет, фурнитура и ношение через плечо одинаковые во всех клипах</dd></div><div class="row" data-h="one.row4"><dt data-k="one.dt4">Дубли</dt><dd data-k="one.dd4">6 годных клипов из 8 финальных генераций</dd></div></dl><div class="fix"><h3 data-k="one.fh">Зачем это бренду</h3><ul><li data-h="one.fi1"><span data-k="one.f1">Одна модель носит всю коллекцию: образы меняются, лицо и аксессуар узнаются с первого кадра.</span></li><li data-h="one.fi2"><span data-k="one.f2">Новый образ стоит одного кадра и одного клипа, поэтому вариантов под тест можно сделать много.</span></li></ul></div></div></section><section class="next" aria-label="В работе" data-sec="next" data-h="sec.next"><img src="media/one/k1_poster.jpg" alt="Vera" loading="lazy"><div class="txt"><span data-k="next.e" class="eyebrow">В работе</span><p><b data-k="next.b">Vera: своя серия UGC.</b> <span data-k="next.p">Три продукта, как у Maya: SAULE, TAMSHY, KYR. Добавлю сюда, когда будет готово.</span></p></div></section><section class="piece" aria-labelledby="h-st" data-sec="st" data-h="sec.st"><div class="phead"><span class="tag"><span data-k="st.tag1">UA-реклама</span><span data-k="st.tag2">Мобильная стратегия</span><span data-k="st.tag3">9:16 · 36 с</span></span><h2 data-k="st.h" id="h-st">Steppe Throne</h2><p data-k="st.log" class="logline">Спек-ролик для вымышленной мобильной стратегии. Дочь хана хочет замуж за пастуха Бека, хан спрашивает уровень его ханства: четвёртый. Бек отстраивается с одной сломанной юрты до армии и возвращается к тем же воротам.</p></div><div class="lb"><div class="lbrow" data-h="st.row1x"><span data-k="st.r1" class="who">Персонажи</span><div class="strip wide" style="--n:4"><span class="z" role="button" tabindex="0" data-src="media/st/st_c1.jpg" data-h="st.c1"><img class="ph wd" src="media/st/st_c1_t.jpg" alt="Хан" loading="lazy" width="640" height="360"></span><span class="z" role="button" tabindex="0" data-src="media/st/st_c2.jpg" data-h="st.c2"><img class="ph wd" src="media/st/st_c2_t.jpg" alt="Жена хана" loading="lazy" width="640" height="360"></span><span class="z" role="button" tabindex="0" data-src="media/st/st_c3.jpg" data-h="st.c3"><img class="ph wd" src="media/st/st_c3_t.jpg" alt="Дочь хана" loading="lazy" width="640" height="360"></span><span class="z" role="button" tabindex="0" data-src="media/st/st_c4.jpg" data-h="st.c4"><img class="ph wd" src="media/st/st_c4_t.jpg" alt="Бек: от пастуха до полководца" loading="lazy" width="640" height="360"></span></div></div><div class="lbrow" data-h="st.row2x"><span data-k="st.r2" class="who">Ключевые кадры</span><div class="strip" style="--n:6"><span class="z" role="button" tabindex="0" data-src="media/st/st_k1.jpg" data-h="st.k1"><img class="ph" src="media/st/st_k1_t.jpg" alt="Хан спрашивает уровень ханства" loading="lazy" width="640" height="1146"></span><span class="z" role="button" tabindex="0" data-src="media/st/st_k2.jpg" data-h="st.k2"><img class="ph" src="media/st/st_k2_t.jpg" alt="Бек за воротами" loading="lazy" width="640" height="1146"></span><span class="z" role="button" tabindex="0" data-src="media/st/st_k3.jpg" data-h="st.k3"><img class="ph" src="media/st/st_k3_t.jpg" alt="LV.4: одна сломанная юрта" loading="lazy" width="640" height="1146"></span><span class="z" role="button" tabindex="0" data-src="media/st/st_k4.jpg" data-h="st.k4"><img class="ph" src="media/st/st_k4_t.jpg" alt="LV.37: ставка" loading="lazy" width="640" height="1146"></span><span class="z" role="button" tabindex="0" data-src="media/st/st_k5.jpg" data-h="st.k5"><img class="ph" src="media/st/st_k5_t.jpg" alt="LV.68: армия" loading="lazy" width="640" height="1146"></span><span class="z" role="button" tabindex="0" data-src="media/st/st_k6.jpg" data-h="st.k6"><img class="ph" src="media/st/st_k6_t.jpg" alt="Возвращение к воротам" loading="lazy" width="640" height="1146"></span></div></div></div><div class="solo"><video class="v916" src="media/st/st_hook_a.mp4" poster="media/st/st_hook_a_poster.jpg" controls playsinline preload="none" aria-label="Steppe Throne, хук A"></video><div class="sheet"><dl class="log"><div class="row" data-h="st.row1"><dt data-k="st.dt1">Кадры</dt><dd data-k="st.dd1">Листы персонажей и ключевые кадры в Nano Banana Pro; энд-кард в GPT Image 2</dd></div><div class="row" data-h="st.row2"><dt data-k="st.dt2">Видео</dt><dd data-k="st.dd2">Kling O3 по первому и последнему кадру, Seedance 2.0 для синхрона губ, апскейл до 1080p</dd></div><div class="row" data-h="st.row3"><dt data-k="st.dt3">Звук</dt><dd data-k="st.dd3">5 голосов ElevenLabs v4, музыка с домброй в ElevenLabs Music, шумы; каждая реплика проверена распознаванием речи</dd></div><div class="row" data-h="st.row4"><dt data-k="st.dt4">Монтаж</dt><dd data-k="st.dd4">Значки уровней слоями из кода, караоке-субтитры, сборка в DaVinci Resolve 21 через Python и FCPXML, −14 LUFS</dd></div><div class="row" data-h="st.row5"><dt data-k="st.dt5">Срок</dt><dd data-k="st.dd5">Один день, около 400 кредитов Higgsfield вместе с тестами</dd></div></dl><div class="fix"><h3 data-k="st.fh">Зачем это игре</h3><ul><li data-h="st.fi1"><span data-k="st.f1">Хук «отказ из-за уровня» и прогрессия уровней собраны по разбору 11 реклам жанра: в тест идёт то, что уже работает.</span></li><li data-h="st.fi2"><span data-k="st.f2">Персонажи и мир зафиксированы листами, поэтому новые хуки и версии под тест собираются из тех же ассетов.</span></li></ul></div></div></div></section><section class="piece" aria-labelledby="h-arch" data-sec="arch" data-h="sec.arch"><div class="phead"><span class="tag"><span data-k="arch.tag1">Архив</span><span data-k="arch.tag2">Продукт</span><span data-k="arch.tag3">Моушн UI</span></span><h2 data-k="arch.h" id="h-arch">Ранние работы</h2><p data-k="arch.log" class="logline">Шоты и ролики, сделанные до этого портфолио: продукт и фактуры, моушн интерфейса для финтеха, стройматериалы. Нажмите на кадр, чтобы посмотреть.</p></div><div class="arch"><div class="agroup" data-h="arch.g1x"><span data-k="arch.g1" class="who">Продукт и фактуры</span><div class="agrid g1"><figure class="vtile" data-h="arch.a01"><button class="vt" type="button" data-v="media/arch/a01.mp4" data-ar="2.3616" aria-label="Портрет в офисе"><img class="fg" src="media/arch/a01_poster.jpg" alt="" loading="lazy"><span class="dur">0:05</span></button><figcaption data-k="arch.a01">Портрет в офисе</figcaption></figure><figure class="vtile" data-h="arch.a02"><button class="vt" type="button" data-v="media/arch/a02.mp4" data-ar="1.7927" aria-label="Бампер для телефона"><img class="fg" src="media/arch/a02_poster.jpg" alt="" loading="lazy"><span class="dur">0:03</span></button><figcaption data-k="arch.a02">Бампер для телефона</figcaption></figure><figure class="vtile" data-h="arch.a03"><button class="vt" type="button" data-v="media/arch/a03.mp4" data-ar="1.7486" aria-label="Шарф над пляжем"><img class="fg" src="media/arch/a03_poster.jpg" alt="" loading="lazy"><span class="dur">0:10</span></button><figcaption data-k="arch.a03">Шарф над пляжем</figcaption></figure><figure class="vtile" data-h="arch.a04"><button class="vt" type="button" data-v="media/arch/a04.mp4" data-ar="1.7978" aria-label="Макро глаза"><img class="fg" src="media/arch/a04_poster.jpg" alt="" loading="lazy"><span class="dur">0:05</span></button><figcaption data-k="arch.a04">Макро глаза</figcaption></figure><figure class="vtile" data-h="arch.a05"><button class="vt" type="button" data-v="media/arch/a05.mp4" data-ar="1.7877" aria-label="Интерьер, смена света"><img class="fg" src="media/arch/a05_poster.jpg" alt="" loading="lazy"><span class="dur">0:05</span></button><figcaption data-k="arch.a05">Интерьер, смена света</figcaption></figure><figure class="vtile" data-h="arch.a06"><button class="vt vert" type="button" data-v="media/arch/a06.mp4" data-ar="0.5625" aria-label="Дезодорант во льду"><img class="blur" src="media/arch/a06_poster.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="media/arch/a06_poster.jpg" alt="" loading="lazy"><span class="dur">0:05</span></button><figcaption data-k="arch.a06">Дезодорант во льду</figcaption></figure></div></div><div class="agroup" data-h="arch.g2x"><span data-k="arch.g2" class="who">Моушн интерфейса · финтех</span><div class="agrid g2"><figure class="vtile" data-h="arch.a07"><button class="vt" type="button" data-v="media/arch/a07.mp4" data-ar="1.7778" aria-label="Кредитный конвейер"><img class="fg" src="media/arch/a07_poster.jpg" alt="" loading="lazy"><span class="dur">0:05</span></button><figcaption data-k="arch.a07">Кредитный конвейер</figcaption></figure><figure class="vtile" data-h="arch.a08"><button class="vt" type="button" data-v="media/arch/a08.mp4" data-ar="1.7778" aria-label="Кредитный брокер"><img class="fg" src="media/arch/a08_poster.jpg" alt="" loading="lazy"><span class="dur">0:07</span></button><figcaption data-k="arch.a08">Кредитный брокер</figcaption></figure><figure class="vtile" data-h="arch.a09"><button class="vt" type="button" data-v="media/arch/a09.mp4" data-ar="1.7778" aria-label="AI-скоринг"><img class="fg" src="media/arch/a09_poster.jpg" alt="" loading="lazy"><span class="dur">0:05</span></button><figcaption data-k="arch.a09">AI-скоринг</figcaption></figure><figure class="vtile" data-h="arch.a10"><button class="vt" type="button" data-v="media/arch/a10.mp4" data-ar="1.7778" aria-label="Склад автомобилей"><img class="fg" src="media/arch/a10_poster.jpg" alt="" loading="lazy"><span class="dur">0:06</span></button><figcaption data-k="arch.a10">Склад автомобилей</figcaption></figure><figure class="vtile" data-h="arch.a11"><button class="vt" type="button" data-v="media/arch/a11.mp4" data-ar="1.7778" aria-label="AutoHub"><img class="fg" src="media/arch/a11_poster.jpg" alt="" loading="lazy"><span class="dur">0:07</span></button><figcaption data-k="arch.a11">AutoHub</figcaption></figure><figure class="vtile" data-h="arch.a12"><button class="vt vert" type="button" data-v="media/arch/a12.mp4" data-ar="0.5625" aria-label="Вертикаль для соцсетей"><img class="blur" src="media/arch/a12_poster.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="media/arch/a12_poster.jpg" alt="" loading="lazy"><span class="dur">0:06</span></button><figcaption data-k="arch.a12">Вертикаль для соцсетей</figcaption></figure></div></div><div class="agroup" data-h="arch.g3x"><span data-k="arch.g3" class="who">Стройматериалы</span><div class="agrid g3"><figure class="vtile" data-h="arch.a13"><button class="vt" type="button" data-v="media/arch/a13.mp4" data-ar="1.7729" aria-label="Упаковка в салоне"><img class="fg" src="media/arch/a13_poster.jpg" alt="" loading="lazy"><span class="dur">0:05</span></button><figcaption data-k="arch.a13">Упаковка в салоне</figcaption></figure><figure class="vtile" data-h="arch.a14"><button class="vt vert" type="button" data-v="media/arch/a14.mp4" data-ar="0.5625" aria-label="Упаковка на объекте"><img class="blur" src="media/arch/a14_poster.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="media/arch/a14_poster.jpg" alt="" loading="lazy"><span class="dur">0:15</span></button><figcaption data-k="arch.a14">Упаковка на объекте</figcaption></figure><figure class="vtile" data-h="arch.a15"><button class="vt vert" type="button" data-v="media/arch/a15.mp4" data-ar="0.5621" aria-label="Монтаж утеплителя"><img class="blur" src="media/arch/a15_poster.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="media/arch/a15_poster.jpg" alt="" loading="lazy"><span class="dur">0:14</span></button><figcaption data-k="arch.a15">Монтаж утеплителя</figcaption></figure></div></div></div></section><section class="piece" aria-labelledby="h-bf" data-sec="before" data-h="sec.before"><div class="before"><div class="phead"><h2 data-k="bf.h" id="h-bf">До AI</h2><p data-k="bf.p">Исполнительный и линейный продюсер в Kinetika Production: брифы, бюджеты до 10 млн тенге, группы от 8 до 20 человек, сдача по глобальным гайдлайнам брендов.</p></div><ul class="vlinks"><li data-h="bf.li1"><a data-k="bf.l1" href="https://vimeo.com/975430469" target="_blank" rel="noopener">KFC «The Legendary Flavor»</a><span data-k="bf.r1" class="role">через Cheil</span></li><li data-h="bf.li2"><a data-k="bf.l2" href="https://vimeo.com/885523500" target="_blank" rel="noopener">Hardee's «Switch Off Hunger»</a><span data-k="bf.r2" class="role">Kinetika Production</span></li><li data-h="bf.li3"><a data-k="bf.l3" href="https://vimeo.com/885522594" target="_blank" rel="noopener">Burger King «Teriyaki King Burger is Back!»</a><span data-k="bf.r3" class="role">линейный продюсер</span></li><li data-h="bf.li4"><a data-k="bf.l4" href="https://vimeo.com/1077953223" target="_blank" rel="noopener">KMF «With Love for Your Business»</a><span data-k="bf.r4" class="role">исполнительный продюсер</span></li></ul></div></section><footer><span data-k="ft.l">Алихан Тасбулатов · AI Creative Producer</span><span class="fr"><span>Telegram <a href="https://t.me/rarealmatysnowflake" target="_blank" rel="noopener">@rarealmatysnowflake</a></span><span data-h="ft.enx" data-off><a data-k="ft.en" href="https://claude.ai/artifact/HuA8kKWQoSnFbxuEn592t4" target="_blank" rel="noopener"></a></span></span></footer></main><script type="application/json" id="state">{"v":1,"order":["offer","maya","mb","wardrobe","gj","cb","sp","dd","ddp","one","next","st","arch","method","before"],"hidden":{"img.v_car":true,"ddp.row4x":true,"maya.fi2":true,"maya.fi1":true,"sp.fi1":true,"sp.fi2":true,"st2":true,"sec.dd":true,"sec.ddp":true,"one.k5a":true,"one.k5b":true,"one.k5":true,"wd.row3":true,"sec.method":true,"ft.enx":true},"t":{"meta.title":"Портфолио Алихана Тасбулатова","hdr.eyebrow":"","hdr.h1":"Меня зовут Алихан, и я","hdr.lede":"делаю AI-рекламу, видео и фото, которая выдерживает соседство с настоящей съёмкой. Шесть лет продюсировал рекламу для KFC, Burger King и HONOR и привык планировать готовый ролик до генерации. Теперь веду всю цепочку сам, от хука до мастера.","hdr.note":"Работы сделаны для вымышленных брендов (AY, TAMSHY, SAULE, KYR), чтобы показать подход. Персонажи сгенерированы, все взрослые.","st1.n":"3","st1.t":"постоянных AI-креатора (можно добавить под бренд)","st2.n":"3 из 4","st2.t":"клипов Doll Day годные с первого дубля","st3.n":"7 из 7","st3.t":"клипов совпали со сценарием с первого дубля","st4.n":"14 из 14","st4.t":"шагов гардероба с первого дубля","st5.n":"−14 LUFS","st5.t":"мастера и автоматический QC","offer.e":"Для брендов","offer.h":"Создадим AI-моделей под ваш бренд","offer.p":"Подбираем внешность под вашу аудиторию и закрепляем лицо: модель остаётся узнаваемой во всех съёмках и роликах. На ней делаем фото и видео в стиле и айдентике бренда: палитра, свет, шрифты, тон и ваши вещи по пэкшотам.","offer.cta":"Обсудить в Telegram","one.tag1":"Fashion","one.tag2":"Outfit Switch","one.tag3":"Vera × AY","one.h":"The One","one.log":"Vera меняет образ на каждый бит, а сумка AY остаётся. Образы из капсулы гардероба оживают по одному ключевому кадру: белая циклорама, один план в полный рост, своя поза на каждый образ.","one.k1.k":"K1 · тренч","one.k1.d":"Шаг к камере, ладонь на сумке","one.k2.k":"K2 · бомбер","one.k2.d":"Оглядывается через плечо","one.k3.k":"K3 · плиссе","one.k3.d":"Полуоборот, складки раскрываются","one.k4.k":"K4 · красные кеды","one.k4.d":"Шаг к камере, кеды ведут кадр","one.k5.k":"K5 · мини-сумка","one.k5.d":"Не та сумка: взгляд в объектив","one.c.k":"Хук C · макро","one.c.d":"Коньячная кожа и латунные кольца","one.k5a.k":"K5 · дубль 1","one.k5a.d":"Первый дубль","one.k5b.k":"K5 · дубль 2","one.k5b.d":"Второй дубль","one.dt1":"Кадры","one.dd1":"Ключевые кадры K1…K5 из цепочки образов Vera (Nano Banana Pro): лицо и сумка зафиксированы, за шаг меняется одна вещь","one.dt2":"Видео","one.dd2":"Seedance 2.5: черновики 480p, финал 720p, 4…6 с на образ. Клипы без звука: бит и звук ставятся в монтаже","one.dt3":"Сумка","one.dd3":"Строка PRODUCT TRUTH в каждом промпте: форма, цвет, фурнитура и ношение через плечо одинаковые во всех клипах","one.dt4":"Дубли","one.dd4":"6 годных клипов из 8 финальных генераций","one.fh":"Зачем это бренду","one.f1":"Одна модель носит всю коллекцию: образы меняются, лицо и аксессуар узнаются с первого кадра.","one.f2":"Новый образ стоит одного кадра и одного клипа, поэтому вариантов под тест можно сделать много.","dd.tag1":"Fashion","dd.tag2":"Outfit Switch","dd.tag3":"Vera × AY","dd.tag4":"3 хука","dd.h":"Doll Day","dd.log":"Кукла в витрине: Vera в пижаме на подиуме, зритель взмахом пальца меняет ей образы. Ни один не оживает, пока с неба не падает сумка AY: с ней кукла сходит с подиума и уходит жить. Образы меняются, сумка одна на все.","dd.a.k":"Хук A","dd.a.q":"Dress me.","dd.b.k":"Хук B","dd.b.q":"Wave your finger","dd.c.k":"Хук C","dd.c.q":"4 outfits. 1 bag. 0 exceptions.","dd.dt1":"Формат","dd.dd1":"Трендовый Outfit Switch без реплик, 28,9 с, 9:16 и 4:5. Ритм и механика собраны по разбору трендового референса кадр за кадром","dd.dt2":"Видео","dd.dd2":"11 клипов Seedance 2.5 сразу в 720p, все 11 годные с первого дубля; расход ровно по смете, посчитанной до запуска","dd.dt3":"Монтаж","dd.dd3":"13 сцен на 51 долю трека (106 BPM, лицензия Epidemic Sound), на каждую долю своё событие. Зумы, рукописные хуки, UI камеры и стоп-кадры финала собраны кодом","dd.dt4":"Сдача","dd.dd4":"6 мастеров: 3 хука в 9:16 и 4:5, −14 LUFS, автоматический QC 6 из 6","dd.fh":"Поймал на ревью","dd.f1":"Seedance держит спину около 1,8 с и разворачивается только на второй секунде: темп разворота собрал в монтаже, без перегенерации.","dd.f2":"Глаза из макро-клипа вклеены в зеркало машины на посте: одна генерация работает на две сцены.","dd.f3":"Платок падает с неба слоем из пэкшота, а не генерацией: точнее и дешевле.","ddp.tag1":"Фото","ddp.tag2":"Nano Banana Pro","ddp.tag3":"Vera · Maya","ddp.h":"Doll Day: фото","ddp.log":"Кадры для ролика выше и одновременно готовый лукбук: четыре образа фронтом и спиной, предметка, сцены в городе и финальная серия на диване. Тот же план повторил на Maya.","ddp.r1":"Vera · 4 образа, фронт и спина","ddp.l1":"Мята","ddp.l2":"Мандарин","ddp.l3":"Лаванда","ddp.l4":"Небо","ddp.r2":"Сцены и предметка","ddp.r3":"Финал: 6 стоп-кадров","ddp.r4":"Тот же план, другое лицо: Maya","ddp.dt1":"Модель","ddp.dd1":"Nano Banana Pro, 2k, 9:16; пэкшот платка 1:1","ddp.dt2":"Метод","ddp.dd2":"Каждый образ одним кадром от плана зала и лица; спина правкой фронта, поэтому одежда совпадает до детали","ddp.dt3":"Итог","ddp.dd3":"Vera: 27 генераций, 23 годных. Maya: 21 генерация, 20 годных","ddp.dt4":"Брак","ddp.dd4":"5 из 48: штатив с телефоном в кадре зала, камера ближе, чем в остальных образах (3), дефект глаза в макро","ddp.fh":"Зачем это бренду","ddp.f1":"Ролик и лукбук из одного плана: кадры для карточек, сторис и рекламы в одном стиле.","ddp.f2":"Сменить лицо под рынок или аудиторию: один пакет кадров, а не новая съёмка.","maya.tag1":"UGC","maya.tag2":"Один креатор, три категории","maya.tag3":"Maya","maya.h":"Maya, три продукта","maya.log":"Один AI-креатор в уходе, напитках и одежде, и в каждом ролике свой UGC-формат: первая реакция, день из жизни, примерка.","maya.a.k":"Сыворотка SAULE · первая реакция","maya.a.q":"Ten-step routine? Not in Almaty. One drop.","maya.b.k":"TAMSHY · день из жизни","maya.b.q":"Three p.m. meeting got cancelled. Celebrating responsibly.","maya.c.k":"Рубашка KYR · примерка","maya.c.q":"Five-two. Does an oversized overshirt eat me? Let's see.","maya.dt1":"Креатор","maya.dd1":"Одно лицо Soul ID и один голос на все три ролика","maya.dt2":"Видео","maya.dd2":"Seedance 2.5, 720p, 12…13 с каждый","maya.dt3":"Дубли","maya.dd3":"4 генерации на 3 ролика","maya.dt4":"Рынки","maya.dd4":"Английский; русская озвучка записана для всех трёх и написана под рынок, а не переведена","maya.fh":"","maya.f1":"В примерке телефон висел в воздухе: переснял с камерой на штативе.","maya.f2":"Модель нарисовала реальный логотип на ноутбуке: убрал на посте, в промптах теперь устройства без бренда.","wd.tag1":"Консистентность","wd.tag2":"Nano Banana Pro","wd.tag3":"Maya · Vera · Leo","wd.h":"Капсула гардероба","wd.log":"Шестнадцать вымышленных вещей и цепочки образов для трёх персонажей: за шаг меняется одна вещь, лицо не меняется никогда.","wd.cap":"Капсула: 16 пэкшотов","wd.empty":"1 вещь за шаг","wd.dt1":"Метод","wd.dd1":"Правка предыдущего кадра, остальное без изменений, одна вещь заменяется по её пэкшоту как второму референсу; после каждого шага лицо возвращается к базовому кадру. Ваши реальные вещи переносим так же, по одной-двум фотографиям","wd.dt2":"Итог","wd.dd2":"41 генерация; 14 из 14 шагов цепочек годные с первого дубля","wd.dt3":"","wd.dd3":"","wd.fh":"Зачем это рекламе","wd.f1":"Один персонаж носит всю линейку клиента через всю кампанию и не плывёт.","wd.f2":"Замена одной вещи: дешёвая правка, а не новая съёмка или новая генерация человека.","sp.tag1":"UGC","sp.tag2":"3 варианта хука","sp.tag3":"Leo × TAMSHY","sp.h":"Sorry, Pitcher","sp.log":"Камера в холодильнике. Парень, который тайно скучает по газировке, находит банку игристого абрикосового чая за кувшином холодного чая. Одно тело ролика, три разных начала для теста.","sp.a.k":"Хук A","sp.a.q":"Fizzy tea. Good or weird?","sp.b.k":"Хук B","sp.b.q":"Check behind the pitcher","sp.c.k":"Хук C","sp.c.q":"Apricot tea. With actual fizz.","sp.dt1":"Формат","sp.dd1":"Креатор в камеру, статичная камера в холодильнике, 22,7…25 с; сдача в 9:16 и 4:5","sp.dt2":"Голос","sp.dd2":"Создан в ElevenLabs и утверждён на слух до любого видео","sp.dt3":"Видео","sp.dd3":"Seedance 2.5 с ключевым кадром, листом персонажа, продуктом и утверждённым голосом в референсах; черновики 480p, затем те же дубли в 1080p","sp.dt4":"Дубли","sp.dd4":"7 клипов, 7 годных с первого дубля; распознавание речи совпало со сценарием во всех 7","sp.dt5":"Пост","sp.dd5":"Монтажная спецификация на каждый мастер: субтитры по два слова, карточка хука, энд-кард, −14 LUFS; автоматический QC пройден на всех 6 мастерах","sp.fh":"","sp.f1":"Скачок непрерывности на склейке хука и тела (банка снова на полке): хуки перерезаны в монтаже.","sp.f2":"Прозрачная стеклянная полка показывала одну руку дважды, на колене и на банке. Замаскировал под матовое стекло на посте; «никаких отражающих поверхностей в промптах» теперь правило моей лаборатории хуков.","mb.tag1":"Трендовый ролик","mb.tag2":"30 с","mb.tag3":"Maya","mb.h":"Model Behavior","mb.log":"AI-модель устала от хаотичного монтажа, забирает курсор у пользователя, сама режиссирует съёмку и выходит из телефона в реальный мир, всё ещё в одежде клиента.","mb.offer":"Такой ролик соберём под ваш бренд. Креатив разрабатываем вместе: идею, сценарий и образы согласуем с вами до генерации, дальше вы утверждаете ключевые кадры и черновики.","mb.dt1":"Видео","mb.dd1":"16 генераций Seedance 2.5: 10 черновиков в 480p, 6 финализированы в 1080p; ни одного брака","mb.dt2":"Кадры","mb.dd2":"45 ключевых кадров и ассетов, 6 в брак","mb.dt3":"Монтаж","mb.dd3":"Слой интерфейса собран как HTML-страница, отрендерен покадрово и сведён в ffmpeg","mb.dt4":"Версии","mb.dd4":"Русская и английская; 9:16, 16:9 и соцверсия 22 с","mb.fh":"Самый сложный шот","mb.f1":"Выход из вертикального телефона в полный рост: форсированная перспектива с совпадающими стартовым и финальным кадром, с первого дубля.","next.e":"В работе","next.b":"Vera: своя серия UGC.","next.p":"Три продукта, как у Maya: SAULE, TAMSHY, KYR. Добавлю сюда, когда будет готово.","m.h":"Как я работаю","m1.h":"Голос до видео","m1.p":"Сначала создаю и утверждаю голос, потом отдаю его видеомодели как аудиореференс и проверяю каждую реплику распознаванием речи. Проглоченные слова и рассинхрон губ ловлю до монтажа.","m2.h":"Черновик дёшево, в финал только лучший дубль","m2.p":"Черновики в 480p, затем тот же дубль в 1080p. Стоимость генерации считаю до каждого запуска и веду учёт годных клипов по каждой работе.","m3.h":"Чиню самый дешёвый слой","m3.p":"Внешность в ключевом кадре, действие в промпте, темп и текст в монтаже. Перегенерирую только при морфинге пальцев, дрейфе лица, мерцании фактур, рассинхроне губ или искажённом продукте.","m4.h":"Пайплайн как код","m4.p":"Мой процесс живёт в скиллах Claude Code: лаборатория хуков (концепт-карта, три хука на одно тело, панель критиков), сборка по монтажной спецификации, мастер −14 LUFS и QC на размер, фризы, чёрные кадры и безопасные зоны.","bf.h":"До AI","bf.p":"Исполнительный и линейный продюсер в Kinetika Production: брифы, бюджеты до 10 млн тенге, группы от 8 до 20 человек, сдача по глобальным гайдлайнам брендов.","bf.l1":"KFC «The Legendary Flavor»","bf.r1":"через Cheil","bf.l2":"Hardee's «Switch Off Hunger»","bf.r2":"Kinetika Production","bf.l3":"Burger King «Teriyaki King Burger is Back!»","bf.r3":"линейный продюсер","bf.l4":"KMF «With Love for Your Business»","bf.r4":"исполнительный продюсер","ft.l":"Алихан Тасбулатов · AI Creative Producer","ft.en":"","gj.tag1":"Fashion","gj.tag2":"Genjutsu Lite","gj.tag3":"Vera · Maya × AY","gj.h":"Трендовые шаблоны","gj.log":"Берём трендовый ролик-шаблон Higgsfield и ставим в него нашу модель, наши образы и сумку AY одной генерацией. Хореография, тайминг и монтаж тренда сохраняются.","gj.a.k":"Rugside Outfit Swap · Vera","gj.a.d":"4 образа, смена за лопастью вентилятора","gj.b.k":"Street Style Swap · Maya","gj.b.d":"Проход по улице с сумкой AY","gj.c.k":"Fashion Film Strut · Vera","gj.c.d":"Fashion-ролик с крупными планами","gj.dt1":"Рефы","gj.dd1":"Головы из сета персонажа, образы без головы, финальный образ в полный рост с сумкой и пэкшот сумки","gj.dt2":"Проверка","gj.dd2":"Лицо сверяем с портретом персонажа покадрово, с шагом 0,1 с","gj.dt3":"Итог","gj.dd3":"3 шаблона: 2 приняты с первой генерации, 1 доведён монтажом","gj.fh":"Зачем это бренду","gj.f1":"Тренд можно подхватить, пока он в рекомендациях: с вашей моделью и вашим продуктом, за одну генерацию.","gj.f2":"Знаем ограничения: крупные планы с поворотом головы уводят лицо, поэтому выбираем шаблоны со средними планами и жёсткими сменами.","cb.tag1":"UGC без реплик","cb.tag2":"Смена масштаба","cb.tag3":"Leo × TAMSHY","cb.h":"Cannonball","cb.log":"Парню слишком жарко для чая: он наливает стакан TAMSHY, разбегается через всю кухню и прыгает в него бомбочкой. Немой гэг на смене масштаба, три хука на одно тело.","cb.a.k":"Хук A · взгляд","cb.a.d":"Стакан к объективу, глаза в камеру","cb.b.k":"Хук B · подпись","cb.b.d":"«Too hot for tea.»","cb.c.k":"Хук C · банка первой","cb.c.d":"Налив TAMSHY в стакан","cb.dt1":"Референс","cb.dd1":"Трендовый ролик со сменой масштаба разобран по 14 кадрам; ключевые кадры одной кухней в Nano Banana","cb.dt2":"Видео","cb.dd2":"9 клипов Kling 4.0 в 1080p и контрольная сцена Seedance 2.5 с апскейлом","cb.dt3":"Монтаж","cb.dd3":"Разбег ускорен в 1,5 раза, прыжок в 1,3; стык клипов двух моделей спрятан выравниванием кадра и наплывом 0,2 с; музыка Epidemic Sound, звуки всплеска","cb.dt4":"Сдача","cb.dd4":"Хуки A, B, C в 9:16, 19…22 с, −14 LUFS, автоматический QC пройден","cb.fh":"Зачем это бренду","cb.f1":"Продукт стоит в кадре весь ролик этикеткой к камере, а гэг держит внимание без слов, на любом языке.","cb.f2":"Три хука на одно тело: тестируете начало, а не весь ролик.","st.tag1":"UA-реклама","st.tag2":"Мобильная стратегия","st.tag3":"9:16 · 36 с","st.h":"Steppe Throne","st.log":"Спек-ролик для вымышленной мобильной стратегии. Дочь хана хочет замуж за пастуха Бека, хан спрашивает уровень его ханства: четвёртый. Бек отстраивается с одной сломанной юрты до армии и возвращается к тем же воротам.","st.r1":"Персонажи","st.r2":"Ключевые кадры","st.dt1":"Кадры","st.dd1":"Листы персонажей и ключевые кадры в Nano Banana Pro; энд-кард в GPT Image 2","st.dt2":"Видео","st.dd2":"Kling O3 по первому и последнему кадру, Seedance 2.0 для синхрона губ, апскейл до 1080p","st.dt3":"Звук","st.dd3":"5 голосов ElevenLabs v4, музыка с домброй в ElevenLabs Music, шумы; каждая реплика проверена распознаванием речи","st.dt4":"Монтаж","st.dd4":"Значки уровней слоями из кода, караоке-субтитры, сборка в DaVinci Resolve 21 через Python и FCPXML, −14 LUFS","st.dt5":"Срок","st.dd5":"Один день, около 400 кредитов Higgsfield вместе с тестами","st.fh":"Зачем это игре","st.f1":"Хук «отказ из-за уровня» и прогрессия уровней собраны по разбору 11 реклам жанра: в тест идёт то, что уже работает.","st.f2":"Персонажи и мир зафиксированы листами, поэтому новые хуки и версии под тест собираются из тех же ассетов.","arch.tag1":"Архив","arch.tag2":"Продукт","arch.tag3":"Моушн UI","arch.h":"Ранние работы","arch.log":"Шоты и ролики, сделанные до этого портфолио: продукт и фактуры, моушн интерфейса для финтеха, стройматериалы. Нажмите на кадр, чтобы посмотреть.","arch.g1":"Продукт и фактуры","arch.g2":"Моушн интерфейса · финтех","arch.g3":"Стройматериалы","arch.a01":"Портрет в офисе","arch.a02":"Бампер для телефона","arch.a03":"Шарф над пляжем","arch.a04":"Макро глаза","arch.a05":"Интерьер, смена света","arch.a06":"Дезодорант во льду","arch.a07":"Кредитный конвейер","arch.a08":"Кредитный брокер","arch.a09":"AI-скоринг","arch.a10":"Склад автомобилей","arch.a11":"AutoHub","arch.a12":"Вертикаль для соцсетей","arch.a13":"Упаковка в салоне","arch.a14":"Упаковка на объекте","arch.a15":"Монтаж утеплителя"}}</script><script id="app">(function(){
+'use strict';
+/* One source of truth: the JSON state in #state. The same render code builds the served page (build.js) and the copy the owner saves from edit mode. */
+var EN_URL = 'https://claude.ai/artifact/HuA8kKWQoSnFbxuEn592t4';
+var RU_URL = 'https://claude.ai/artifact/KfxLhAugvR47gdi1e5UHCV';
+var LANG = 'ru';
+function L(ru,en){ return LANG === 'en' ? en : ru; }
+var TG = 'https://t.me/rarealmatysnowflake';
+var MAIL = 'alikhan.tasbulatov@hotmail.com';
+var LI = 'https://www.linkedin.com/in/alikhan-tasbulatov-0a4715241';
+var FONTS = 'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,700..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap';
+var PREFIX = '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>\n';
+var SUFFIX = '\n</body></html>';
+var CL = '<' + '/script>';
+
+function esc(s){ return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function tx(S,k){ var v = S.t[k]; return v == null ? '' : v; }
+function has(S,k){ return Object.prototype.hasOwnProperty.call(S.t,k); }
+function H(S,id){ return ' data-h="' + id + '"' + (S.hidden && S.hidden[id] ? ' data-off' : ''); }
+function E(S,tag,k,attrs){ return '<' + tag + ' data-k="' + k + '"' + (attrs || '') + '>' + esc(tx(S,k)) + '</' + tag + '>'; }
+function SEC(S,id){ return ' data-sec="' + id + '"' + H(S,'sec.' + id); }
+
+function tags(S,p){
+  var o = '';
+  for (var i = 1; has(S,p + '.tag' + i); i++) o += E(S,'span',p + '.tag' + i);
+  return '<span class="tag">' + o + '</span>';
+}
+function phead(S,p){
+  return '<div class="phead">' + tags(S,p) + E(S,'h2',p + '.h',' id="h-' + p + '"') + E(S,'p',p + '.log',' class="logline"') + '</div>';
+}
+function clip(S,k,src,poster,label){
+  return '<figure class="clip"' + H(S,k) + '><div class="cap">' + E(S,'span',k + '.k',' class="k"') + E(S,'q',k + '.q') + '</div>'
+    + '<video class="v916" src="' + src + '" poster="' + poster + '" controls playsinline preload="none" aria-label="' + esc(label) + '"></video></figure>';
+}
+function vclip(S,k,name,label){
+  return '<figure class="clip"' + H(S,k) + '><div class="cap">' + E(S,'span',k + '.k',' class="k"') + E(S,'span',k + '.d',' class="d"') + '</div>'
+    + '<video class="v916" src="media/one/' + name + '.mp4" poster="media/one/' + name + '_poster.jpg" controls muted loop playsinline preload="none" aria-label="' + esc(label) + '"></video></figure>';
+}
+function vc(S,k,src,poster,label,muted){
+  return '<figure class="clip"' + H(S,k) + '><div class="cap">' + E(S,'span',k + '.k',' class="k"') + E(S,'span',k + '.d',' class="d"') + '</div>'
+    + '<video class="v916" src="' + src + '" poster="' + poster + '" controls ' + (muted ? 'muted loop ' : '') + 'playsinline preload="none" aria-label="' + esc(label) + '"></video></figure>';
+}
+function sheet(S,p){
+  var rows = '', li = '';
+  for (var i = 1; has(S,p + '.dt' + i); i++) rows += '<div class="row"' + H(S,p + '.row' + i) + '>' + E(S,'dt',p + '.dt' + i) + E(S,'dd',p + '.dd' + i) + '</div>';
+  for (var j = 1; has(S,p + '.f' + j); j++) li += '<li' + H(S,p + '.fi' + j) + '>' + E(S,'span',p + '.f' + j) + '</li>';
+  return '<div class="sheet"><dl class="log">' + rows + '</dl><div class="fix">' + E(S,'h3',p + '.fh') + '<ul>' + li + '</ul></div></div>';
+}
+function Z(S,src,alt,cls,hid,th){
+  /* th: optional lighter thumbnail; the lightbox always opens src */
+  return '<span class="z" role="button" tabindex="0" data-src="' + src + '"' + (hid ? H(S,hid) : '') + '><img class="ph' + (cls ? ' ' + cls : '') + '" src="' + (th || src) + '" alt="' + esc(alt) + '" loading="lazy" width="640" height="' + (cls === 'sq' ? 640 : cls === 'wd' ? 360 : 1146) + '"></span>';
+}
+function strip(S,items,n){
+  var o = '';
+  for (var i = 0; i < items.length; i++) o += Z(S,'media/dd/' + items[i][0] + '.jpg',items[i][1],items[i][2] || '','img.' + items[i][0]);
+  return '<div class="strip" style="--n:' + n + '">' + o + '</div>';
+}
+
+/* archive: [group, [[file, aspect, seconds], ...]] */
+var ARCH = [
+  ['g1',[['a01',2.3616,5],['a02',1.7927,3],['a03',1.7486,10],['a04',1.7978,5],['a05',1.7877,5],['a06',0.5625,5]]],
+  ['g2',[['a07',1.7778,5],['a08',1.7778,7],['a09',1.7778,5],['a10',1.7778,6],['a11',1.7778,7],['a12',0.5625,6]]],
+  ['g3',[['a13',1.7729,5],['a14',0.5625,15],['a15',0.5621,14]]]
+];
+
+var SECTIONS = {
+  st: function(S){
+    var C = [['c1','Хан','The khan'],['c2','Жена хана','The khan\'s wife'],['c3','Дочь хана','The khan\'s daughter'],['c4','Бек: от пастуха до полководца','Bek: from shepherd to warlord']];
+    var K = [['k1','Хан спрашивает уровень ханства','The khan asks the khanate level'],['k2','Бек за воротами','Bek outside the gates'],['k3','LV.4: одна сломанная юрта','LV.4: one broken yurt'],['k4','LV.37: ставка','LV.37: the camp'],['k5','LV.68: армия','LV.68: the army'],['k6','Возвращение к воротам','Back at the gates']];
+    function row(list, cls){
+      var o = '';
+      for (var i = 0; i < list.length; i++) o += Z(S,'media/st/st_' + list[i][0] + '.jpg',L(list[i][1],list[i][2]),cls,'st.' + list[i][0],'media/st/st_' + list[i][0] + '_t.jpg');
+      return o;
+    }
+    return '<section class="piece" aria-labelledby="h-st"' + SEC(S,'st') + '>' + phead(S,'st')
+      + '<div class="lb">'
+      + '<div class="lbrow"' + H(S,'st.row1x') + '>' + E(S,'span','st.r1',' class="who"') + '<div class="strip wide" style="--n:4">' + row(C,'wd') + '</div></div>'
+      + '<div class="lbrow"' + H(S,'st.row2x') + '>' + E(S,'span','st.r2',' class="who"') + '<div class="strip" style="--n:6">' + row(K,'') + '</div></div>'
+      + '</div>'
+      + '<div class="solo"><video class="v916" src="media/st/st_hook_a.mp4" poster="media/st/st_hook_a_poster.jpg" controls playsinline preload="none" aria-label="Steppe Throne, ' + L('хук A','hook A') + '"></video>' + sheet(S,'st') + '</div>'
+      + '</section>';
+  },
+  arch: function(S){
+    var o = '';
+    for (var g = 0; g < ARCH.length; g++){
+      var gid = ARCH[g][0], items = ARCH[g][1], t = '';
+      for (var i = 0; i < items.length; i++){
+        var n = items[i][0], ar = items[i][1], d = items[i][2], p = 'media/arch/' + n + '_poster.jpg';
+        t += '<figure class="vtile"' + H(S,'arch.' + n) + '><button class="vt' + (ar < 1 ? ' vert' : '') + '" type="button" data-v="media/arch/' + n + '.mp4" data-ar="' + ar + '" aria-label="' + esc(tx(S,'arch.' + n)) + '">'
+          + (ar < 1 ? '<img class="blur" src="' + p + '" alt="" aria-hidden="true" loading="lazy">' : '')
+          + '<img class="fg" src="' + p + '" alt="" loading="lazy"><span class="dur">0:' + (d < 10 ? '0' : '') + d + '</span></button>'
+          + E(S,'figcaption','arch.' + n) + '</figure>';
+      }
+      o += '<div class="agroup"' + H(S,'arch.' + gid + 'x') + '>' + E(S,'span','arch.' + gid,' class="who"') + '<div class="agrid ' + gid + '">' + t + '</div></div>';
+    }
+    return '<section class="piece" aria-labelledby="h-arch"' + SEC(S,'arch') + '>' + phead(S,'arch') + '<div class="arch">' + o + '</div></section>';
+  },
+  gj: function(S){
+    return '<section class="piece" aria-labelledby="h-gj"' + SEC(S,'gj') + '>' + phead(S,'gj')
+      + '<div class="reel">'
+      + vc(S,'gj.a','media/new/gj_rug.mp4','media/new/gj_rug_poster.jpg','Rugside Outfit Swap, Vera')
+      + vc(S,'gj.b','media/new/gj_st.mp4','media/new/gj_st_poster.jpg','Street Style Swap, Maya')
+      + vc(S,'gj.c','media/new/gj_ff.mp4','media/new/gj_ff_poster.jpg','Fashion Film Strut, Vera')
+      + '</div>' + sheet(S,'gj') + '</section>';
+  },
+  cb: function(S){
+    return '<section class="piece" aria-labelledby="h-cb"' + SEC(S,'cb') + '>' + phead(S,'cb')
+      + '<div class="reel">'
+      + vc(S,'cb.a','media/new/cb_a.mp4','media/new/cb_a_poster.jpg','Cannonball, hook A')
+      + vc(S,'cb.b','media/new/cb_b.mp4','media/new/cb_b_poster.jpg','Cannonball, hook B')
+      + vc(S,'cb.c','media/new/cb_c.mp4','media/new/cb_c_poster.jpg','Cannonball, hook C')
+      + '</div>' + sheet(S,'cb') + '</section>';
+  },
+  offer: function(S){
+    return '<section class="offer" aria-labelledby="h-offer"' + SEC(S,'offer') + '>' + E(S,'span','offer.e',' class="eyebrow"')
+      + E(S,'h2','offer.h',' id="h-offer"') + E(S,'p','offer.p')
+      + '<span' + H(S,'offer.ctax') + '>' + E(S,'a','offer.cta',' class="cta" href="' + TG + '" target="_blank" rel="noopener"') + '</span></section>';
+  },
+  one: function(S){
+    return '<section class="piece" aria-labelledby="h-one"' + SEC(S,'one') + '>' + phead(S,'one')
+      + '<div class="vstrip">'
+      + vclip(S,'one.k1','k1','The One, K1, тренч')
+      + vclip(S,'one.k2','k2','The One, K2, бомбер')
+      + vclip(S,'one.k3','k3','The One, K3, плиссе')
+      + vclip(S,'one.k4','k4','The One, K4, красные кеды')
+      + vclip(S,'one.k5','k5','The One, K5, мини-сумка')
+      + vclip(S,'one.c','c','The One, хук C, макро сумки')
+      + vclip(S,'one.k5a','k5_t1','The One, K5, дубль 1')
+      + vclip(S,'one.k5b','k5_t2','The One, K5, дубль 2')
+      + '</div>' + sheet(S,'one') + '</section>';
+  },
+  dd: function(S){
+    return '<section class="piece" aria-labelledby="h-dd"' + SEC(S,'dd') + '>' + phead(S,'dd')
+      + '<div class="reel">'
+      + clip(S,'dd.a','media/dd/dd_a.mp4','media/dd/dd_a_poster.jpg','Doll Day, хук A')
+      + clip(S,'dd.b','media/dd/dd_b.mp4','media/dd/dd_b_poster.jpg','Doll Day, хук B')
+      + clip(S,'dd.c','media/dd/dd_c.mp4','media/dd/dd_c_poster.jpg','Doll Day, хук C')
+      + '</div>' + sheet(S,'dd') + '</section>';
+  },
+  ddp: function(S){
+    var looks = [['l1','мята'],['l2','мандарин'],['l3','лаванда'],['l4','небо']];
+    var pairs = '';
+    for (var i = 0; i < looks.length; i++){
+      var l = looks[i][0];
+      pairs += '<figure class="pair"' + H(S,'ddp.p' + (i + 1)) + '><div class="two">'
+        + Z(S,'media/dd/v_' + l + 'f.jpg','Vera, образ ' + (i + 1) + ' (' + looks[i][1] + '), фронт')
+        + Z(S,'media/dd/v_' + l + 'b.jpg','Vera, образ ' + (i + 1) + ' (' + looks[i][1] + '), спина')
+        + '</div>' + E(S,'figcaption','ddp.' + l) + '</figure>';
+    }
+    return '<section class="piece" aria-labelledby="h-ddp"' + SEC(S,'ddp') + '>' + phead(S,'ddp')
+      + '<div class="lb">'
+      + '<div class="lbrow"' + H(S,'ddp.row1x') + '>' + E(S,'span','ddp.r1',' class="who"') + '<div class="pairs">' + pairs + '</div></div>'
+      + '<div class="lbrow"' + H(S,'ddp.row2x') + '>' + E(S,'span','ddp.r2',' class="who"') + strip(S,[
+          ['v_kf01','Хук: Vera в пижаме на подиуме'],['v_eyes','Макро глаз'],['v_bag','Сумка AY на паркете у подиума'],['v_scarf','Пэкшот платка','sq'],
+          ['v_kf08','Образ 4 с платком и сумкой'],['v_car','POV из машины'],['v_cake','Торт и сумка на столе'],['v_over','Под эстакадой с сумкой']],8) + '</div>'
+      + '<div class="lbrow"' + H(S,'ddp.row3x') + '>' + E(S,'span','ddp.r3',' class="who"') + strip(S,[
+          ['v_s1','Диван, кадр 1'],['v_s2','Диван, кадр 2'],['v_s3','Диван, кадр 3'],['v_s4','Диван, кадр 4'],['v_s5','Диван, кадр 5'],['v_s6','Диван, кадр 6']],6) + '</div>'
+      + '<div class="lbrow"' + H(S,'ddp.row4x') + '>' + E(S,'span','ddp.r4',' class="who"') + strip(S,[
+          ['m_kf01','Maya: хук в пижаме'],['m_l1f','Maya: образ 1'],['m_l2f','Maya: образ 2'],['m_l3f','Maya: образ 3'],['m_l4f','Maya: образ 4'],['m_cake','Maya: торт'],['m_over','Maya: эстакада']],7) + '</div>'
+      + '</div>' + sheet(S,'ddp') + '</section>';
+  },
+  maya: function(S){
+    return '<section class="piece" aria-labelledby="h-maya"' + SEC(S,'maya') + '>' + phead(S,'maya')
+      + '<div class="reel">'
+      + clip(S,'maya.a','media/maya_saule.mp4','media/maya_saule_poster.jpg','Maya, сыворотка SAULE')
+      + clip(S,'maya.b','media/maya_tamshy.mp4','media/maya_tamshy_poster.jpg','Maya, TAMSHY')
+      + clip(S,'maya.c','media/maya_overshirt.mp4','media/maya_overshirt_poster.jpg','Maya, рубашка KYR')
+      + '</div>' + sheet(S,'maya') + '</section>';
+  },
+  wardrobe: function(S){
+    function looks(name,files,alts,tail){
+      var o = '';
+      for (var i = 0; i < files.length; i++) o += '<img src="media/' + files[i] + '.jpg" alt="' + esc(name + ', ' + alts[i]) + '" loading="lazy">';
+      return '<div class="lrow"><span class="who">' + name + '</span><div class="looks">' + o + (tail || '') + '</div></div>';
+    }
+    return '<section class="piece" aria-labelledby="h-wd"' + SEC(S,'wardrobe') + '>' + phead(S,'wd')
+      + '<div class="wardrobe"><figure class="board"><img src="media/capsule_board.jpg" alt="Доска из 16 вымышленных вещей: блейзер, тренч, футболка, свитер, брюки, джинсы, лоферы, кеды, пуховик, бомбер, кардиган, поло, юбка, красные кеды, сумка-полумесяц, мини-сумка" loading="lazy" width="1200" height="1200">' + E(S,'figcaption','wd.cap') + '</figure>'
+      + '<div class="rows">'
+      + looks('Maya',['look_maya_1','look_maya_2','look_maya_3','look_maya_4'],['образ 1: ультрамариновый пуховик и сумка-полумесяц','образ 2: изумрудная юбка в складку','образ 3: красные кеды','образ 4: голубая мини-сумка'],E(S,'span','wd.empty',' class="empty"'))
+      + looks('Vera',['look_vera_0','look_vera_1','look_vera_2','look_vera_3','look_vera_4'],['базовый образ: тренч и джинсы','образ 1: томатный бомбер','образ 2: мятное поло','образ 3: изумрудная юбка','образ 4: красные кеды'])
+      + looks('Leo',['look_leo_0','look_leo_1','look_leo_2','look_leo_3','look_leo_4'],['базовый образ: кремовый свитер с косами','образ 1: мятное поло','образ 2: тренч','образ 3: светлые джинсы','образ 4: ультрамариновый пуховик'])
+      + '</div></div>' + sheet(S,'wd') + '</section>';
+  },
+  sp: function(S){
+    return '<section class="piece" aria-labelledby="h-sp"' + SEC(S,'sp') + '>' + phead(S,'sp')
+      + '<div class="reel">'
+      + clip(S,'sp.a','media/sp_a.mp4','media/sp_a_poster.jpg','Sorry, Pitcher, хук A')
+      + clip(S,'sp.b','media/sp_b.mp4','media/sp_b_poster.jpg','Sorry, Pitcher, хук B')
+      + clip(S,'sp.c','media/sp_c.mp4','media/sp_c_poster.jpg','Sorry, Pitcher, хук C')
+      + '</div>' + sheet(S,'sp') + '</section>';
+  },
+  mb: function(S){
+    return '<section class="piece" aria-labelledby="h-mb"' + SEC(S,'mb') + '>' + phead(S,'mb')
+      + '<div class="offerline"' + H(S,'mb.offerx') + '>' + E(S,'p','mb.offer') + '</div>'
+      + '<video class="v169" src="media/model_behavior' + L('_ru','') + '.mp4" poster="media/model_behavior' + L('_ru','') + '_poster.jpg" controls playsinline preload="none" aria-label="Model Behavior, 16:9"></video>'
+      + sheet(S,'mb') + '</section>';
+  },
+  next: function(S){
+    return '<section class="next" aria-label="' + L('В работе','In production') + '"' + SEC(S,'next') + '><img src="media/one/k1_poster.jpg" alt="Vera" loading="lazy">'
+      + '<div class="txt">' + E(S,'span','next.e',' class="eyebrow"') + '<p>' + E(S,'b','next.b') + ' ' + E(S,'span','next.p') + '</p></div></section>';
+  },
+  method: function(S){
+    var o = '';
+    for (var i = 1; has(S,'m' + i + '.h'); i++) o += '<div class="m"' + H(S,'m' + i) + '>' + E(S,'h3','m' + i + '.h') + E(S,'p','m' + i + '.p') + '</div>';
+    return '<section class="piece" aria-labelledby="h-m"' + SEC(S,'method') + '><div class="phead">' + E(S,'h2','m.h',' id="h-m"') + '</div><div class="method">' + o + '</div></section>';
+  },
+  before: function(S){
+    var urls = ['https://vimeo.com/975430469','https://vimeo.com/885523500','https://vimeo.com/885522594','https://vimeo.com/1077953223'];
+    var o = '';
+    for (var i = 1; i <= urls.length; i++) o += '<li' + H(S,'bf.li' + i) + '>' + E(S,'a','bf.l' + i,' href="' + urls[i - 1] + '" target="_blank" rel="noopener"') + E(S,'span','bf.r' + i,' class="role"') + '</li>';
+    return '<section class="piece" aria-labelledby="h-bf"' + SEC(S,'before') + '><div class="before"><div class="phead">' + E(S,'h2','bf.h',' id="h-bf"') + E(S,'p','bf.p') + '</div><ul class="vlinks">' + o + '</ul></div></section>';
+  }
+};
+
+function header(S){
+  var st = '';
+  for (var i = 1; has(S,'st' + i + '.n'); i++) st += '<span' + H(S,'st' + i) + '>' + E(S,'b','st' + i + '.n') + ' ' + E(S,'span','st' + i + '.t') + '</span>';
+  return '<header class="top"><div class="intro">' + E(S,'span','hdr.eyebrow',' class="eyebrow"') + E(S,'h1','hdr.h1') + E(S,'p','hdr.lede',' class="lede"') + '</div>'
+    + '<aside class="contact" aria-label="' + L('Контакты','Contacts') + '">'
+    + '<div class="crow"><span class="k">Telegram</span><span class="v"><a href="' + TG + '" target="_blank" rel="noopener">@rarealmatysnowflake</a></span></div>'
+    + '<div class="crow"><span class="k">Email</span><span class="v"><span id="mail">' + MAIL + '</span><button class="copy" type="button" data-copy="mail">' + L('Копировать','Copy') + '</button></span></div>'
+    + '<div class="crow"><span class="k">LinkedIn</span><span class="v"><a href="' + LI + '" target="_blank" rel="noopener">alikhan-tasbulatov</a></span></div>'
+    + E(S,'p','hdr.note',' class="note"') + '</aside>'
+    + '<div class="stats">' + st + '</div></header>';
+}
+function footer(S){
+  return '<footer>' + E(S,'span','ft.l') + '<span class="fr"><span>Telegram <a href="' + TG + '" target="_blank" rel="noopener">@rarealmatysnowflake</a></span>'
+    + '<span' + H(S,'ft.enx') + '>' + E(S,'a','ft.en',' href="' + L(EN_URL,RU_URL) + '" target="_blank" rel="noopener"') + '</span></span></footer>';
+}
+function main(S,all){
+  LANG = S.lang || 'ru';
+  /* Hidden sections are left out of the served page; edit mode renders them (all = true) so they can be brought back. */
+  var o = '', seen = {};
+  var show = function(id){ return all || !(S.hidden && S.hidden['sec.' + id]); };
+  for (var i = 0; i < S.order.length; i++){
+    var id = S.order[i];
+    if (SECTIONS[id] && !seen[id]){ seen[id] = true; if (show(id)) o += SECTIONS[id](S); }
+  }
+  for (var k in SECTIONS) if (!seen[k] && show(k)) o += SECTIONS[k](S);
+  return '<main class="wrap">' + header(S) + o + footer(S) + '</main>';
+}
+function jsonSafe(S){ var LS = String.fromCharCode(0x2028), PS = String.fromCharCode(0x2029); return JSON.stringify(S).split('<').join('\\u003c').split(LS).join('\\u2028').split(PS).join('\\u2029'); }
+function assemble(S,CSS,APP,skeleton){
+  var body = '<title>' + esc(tx(S,'meta.title')) + '</title><meta name="claude:viewport-fit-sides" content="cover">'
+    + '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+    + '<link rel="stylesheet" href="' + FONTS + '">'
+    + '<style id="css">' + CSS + '</style>'
+    + main(S)
+    + '<script type="application/json" id="state">' + jsonSafe(S) + CL
+    + '<script id="app">' + APP + CL;
+  return skeleton ? PREFIX + body + SUFFIX : body;
+}
+
+if (typeof module !== 'undefined' && module.exports){ module.exports = { main: main, assemble: assemble }; return; }
+
+/* ---------- browser ---------- */
+var stateEl = document.getElementById('state');
+if (!stateEl) return;
+var S0;
+try { S0 = JSON.parse(stateEl.textContent); } catch (e) { return; }
+var S = clone(S0);
+LANG = S0.lang || 'ru';
+var CSS = (document.getElementById('css') || {}).textContent || '';
+var APP = (document.getElementById('app') || {}).textContent || '';
+var editing = false, dirty = false, busy = false, bar = null, A = null;
+
+function clone(o){ return JSON.parse(JSON.stringify(o)); }
+function norm(s){ return String(s || '').replace(/ /g,' ').replace(/\s+/g,' ').trim(); }
+
+function bindBasics(){
+  var bs = document.querySelectorAll('[data-copy]');
+  for (var i = 0; i < bs.length; i++) (function(b){
+    b.addEventListener('click', function(){
+      var el = document.getElementById(b.getAttribute('data-copy'));
+      var text = el ? el.textContent.trim() : '';
+      var done = function(label){ b.textContent = label; setTimeout(function(){ b.textContent = L('Копировать','Copy'); }, 1600); };
+      try {
+        navigator.clipboard.writeText(text).then(function(){ done(L('Скопировано','Copied')); }, function(){ selectEl(el); done(L('Выделено','Selected')); });
+      } catch (e) { selectEl(el); done(L('Выделено','Selected')); }
+    });
+  })(bs[i]);
+  var vids = [].slice.call(document.querySelectorAll('video'));
+  vids.forEach(function(v){ v.addEventListener('play', function(){ vids.forEach(function(o){ if (o !== v && !o.paused) o.pause(); }); }); });
+}
+function selectEl(el){ if (!el) return; try { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); } catch (e) {} }
+
+/* lightbox */
+var dlg = null;
+function openZoom(src, alt){
+  if (!dlg){
+    dlg = document.createElement('dialog'); dlg.className = 'lbx';
+    dlg.innerHTML = '<button type="button">' + L('Закрыть','Close') + '</button><img alt="">';
+    dlg.addEventListener('click', function(){ dlg.close(); });
+    document.body.appendChild(dlg);
+  }
+  var img = dlg.querySelector('img'); img.src = src; img.alt = alt || '';
+  if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open','');
+}
+document.addEventListener('click', function(e){
+  var z = e.target.closest && e.target.closest('.z');
+  if (!z || editing || e.target.closest('.edctl')) return;
+  var im = z.querySelector('img'); openZoom(z.getAttribute('data-src'), im ? im.alt : '');
+});
+/* video lightbox for archive tiles: closes on backdrop, button or Esc, never on the player itself */
+var vdlg = null;
+function openVid(src, ar, title, poster){
+  if (!vdlg){
+    vdlg = document.createElement('dialog'); vdlg.className = 'lbx lbv';
+    vdlg.innerHTML = '<button type="button">' + L('Закрыть','Close') + '</button><video controls playsinline preload="auto"></video><p class="lbt"></p>';
+    vdlg.addEventListener('click', function(e){ if (e.target === vdlg || e.target.tagName === 'BUTTON') vdlg.close(); });
+    vdlg.addEventListener('close', function(){ var v = vdlg.querySelector('video'); try { v.pause(); } catch (e) {} v.removeAttribute('src'); try { v.load(); } catch (e) {} });
+    document.body.appendChild(vdlg);
+  }
+  var v = vdlg.querySelector('video');
+  [].forEach.call(document.querySelectorAll('main video'), function(o){ if (!o.paused) o.pause(); });
+  vdlg.style.setProperty('--ar', ar || '1.7778');
+  vdlg.querySelector('.lbt').textContent = title || '';
+  if (poster) v.setAttribute('poster', poster); else v.removeAttribute('poster');
+  v.src = src;
+  if (vdlg.showModal) vdlg.showModal(); else vdlg.setAttribute('open','');
+  var pr = v.play(); if (pr && pr.catch) pr.catch(function(){});
+}
+document.addEventListener('click', function(e){
+  var t = e.target.closest && e.target.closest('.vt');
+  if (!t || editing) return;
+  var f = t.closest('figure'), c = f && f.querySelector('figcaption'), im = t.querySelector('img.fg');
+  openVid(t.getAttribute('data-v'), t.getAttribute('data-ar'), c ? c.textContent : '', im ? im.getAttribute('src') : '');
+});
+document.addEventListener('keydown', function(e){
+  if (editing) return;
+  var z = e.target.closest && e.target.closest('.z');
+  if (z && (e.key === 'Enter' || e.key === ' ')){ e.preventDefault(); var im = z.querySelector('img'); openZoom(z.getAttribute('data-src'), im ? im.alt : ''); }
+});
+
+/* ---------- owner edit mode ---------- */
+function btn(label, cls, fn){ var b = document.createElement('button'); b.type = 'button'; b.textContent = label; if (cls) b.className = cls; b.addEventListener('click', fn); return b; }
+function msg(text, ms){
+  if (!bar) return;
+  var m = bar.querySelector('.msg');
+  if (!text){ m.hidden = true; return; }
+  m.textContent = text; m.hidden = false;
+  if (ms) setTimeout(function(){ if (m.textContent === text) m.hidden = true; }, ms);
+}
+function renderBar(){
+  if (!bar) return;
+  var keep = bar.querySelector('.msg');
+  bar.innerHTML = ''; bar.appendChild(keep);
+  if (!editing){
+    bar.appendChild(btn('Редактировать', '', enter));
+  } else {
+    bar.appendChild(btn('Отмена', '', cancel));
+    bar.appendChild(btn(busy ? 'Сохраняю…' : 'Сохранить', 'primary', save));
+  }
+}
+function controls(on){
+  var old = document.querySelectorAll('[data-edui]');
+  for (var i = 0; i < old.length; i++) old[i].remove();
+  if (!on) return;
+  var hs = document.querySelectorAll('[data-h]');
+  for (var j = 0; j < hs.length; j++) (function(el){
+    var c = document.createElement('span'); c.className = 'edctl'; c.setAttribute('data-edui','');
+    var sec = el.getAttribute('data-sec');
+    if (sec){
+      c.appendChild(btn('↑', '', function(e){ e.preventDefault(); e.stopPropagation(); move(el, sec, -1); }));
+      c.appendChild(btn('↓', '', function(e){ e.preventDefault(); e.stopPropagation(); move(el, sec, 1); }));
+    }
+    var t = btn(el.hasAttribute('data-off') ? 'Вернуть' : 'Скрыть', '', function(e){
+      e.preventDefault(); e.stopPropagation();
+      var id = el.getAttribute('data-h');
+      if (el.hasAttribute('data-off')){ el.removeAttribute('data-off'); delete S.hidden[id]; t.textContent = 'Скрыть'; }
+      else { el.setAttribute('data-off',''); S.hidden[id] = true; t.textContent = 'Вернуть'; }
+      dirty = true;
+    });
+    c.appendChild(t);
+    el.appendChild(c);
+  })(hs[j]);
+}
+function move(el, id, dir){
+  var order = S.order.slice(), i = order.indexOf(id);
+  if (i < 0) return;
+  var j = i + dir; if (j < 0 || j >= order.length) return;
+  order.splice(i, 1); order.splice(j, 0, id); S.order = order;
+  var sibs = [].slice.call(el.parentNode.querySelectorAll(':scope > [data-sec]'));
+  var k = sibs.indexOf(el);
+  if (dir < 0 && k > 0) el.parentNode.insertBefore(el, sibs[k - 1]);
+  if (dir > 0 && k < sibs.length - 1) el.parentNode.insertBefore(el, sibs[k + 1].nextSibling);
+  el.scrollIntoView({ block: 'nearest' });
+  dirty = true;
+}
+function setEditable(on){
+  var ks = document.querySelectorAll('[data-k]');
+  for (var i = 0; i < ks.length; i++){
+    var el = ks[i];
+    if (on){
+      try { el.contentEditable = 'plaintext-only'; } catch (e) {}
+      if (el.contentEditable !== 'plaintext-only') el.contentEditable = 'true';
+      el.spellcheck = true;
+    } else {
+      el.removeAttribute('contenteditable');
+    }
+  }
+}
+function rerender(all){
+  var m = document.querySelector('main.wrap');
+  if (!m) return;
+  var tmp = document.createElement('div'); tmp.innerHTML = main(S, all);
+  m.replaceWith(tmp.firstChild); bindBasics();
+}
+function enter(){
+  editing = true; document.body.classList.add('editing');
+  rerender(true);
+  setEditable(true); controls(true); renderBar();
+  msg('Кликни в текст, чтобы править. «Скрыть» убирает блок, стрелки двигают разделы.', 7000);
+}
+function exitEdit(){
+  editing = false; document.body.classList.remove('editing');
+  controls(false); rerender(false); renderBar();
+}
+function cancel(){
+  S = clone(S0); dirty = false;
+  exitEdit();
+  msg('Правки отменены', 2500);
+}
+document.addEventListener('keydown', function(e){
+  if (!editing) return;
+  var k = e.target.closest && e.target.closest('[data-k]');
+  if (k && e.key === 'Enter'){ e.preventDefault(); k.blur(); }
+});
+document.addEventListener('paste', function(e){
+  if (!editing) return;
+  var k = e.target.closest && e.target.closest('[data-k]');
+  if (!k || k.contentEditable === 'plaintext-only') return;
+  e.preventDefault();
+  var text = (e.clipboardData || window.clipboardData).getData('text');
+  document.execCommand('insertText', false, norm(text));
+});
+document.addEventListener('click', function(e){
+  if (editing && e.target.closest && e.target.closest('a[href]') && !e.target.closest('[data-edui]')) e.preventDefault();
+}, true);
+document.addEventListener('input', function(e){ if (editing && e.target.closest && e.target.closest('[data-k]')) dirty = true; });
+
+function collect(){
+  var ks = document.querySelectorAll('[data-k]');
+  /* textContent, not innerText: innerText would save CSS uppercase as real capitals */
+  for (var i = 0; i < ks.length; i++) S.t[ks[i].getAttribute('data-k')] = norm(ks[i].textContent);
+}
+function wait(ms){ return new Promise(function(r){ setTimeout(r, ms); }); }
+async function publishOnce(html){
+  try {
+    await A.publish({ 'index.html': { content: html, contentType: 'text/html' } });
+  } catch (e) {
+    var c = e && e.code;
+    if (c === 'capability_disabled' || c === 'capability_removed' || c === 'read_only_path' || c === 'transform_error'){
+      await A.publish(html);
+    } else { throw e; }
+  }
+}
+async function save(){
+  if (busy) return;
+  collect();
+  var html = assemble(S, CSS, APP, true);
+  busy = true; renderBar(); msg('Сохраняю…');
+  try {
+    try { await publishOnce(html); }
+    catch (e) {
+      if (e && e.code === 'upstream_error'){ await wait(700 + Math.random() * 900); await publishOnce(html); }
+      else throw e;
+    }
+    S0 = clone(S); dirty = false; busy = false;
+    exitEdit(); msg('Сохранено. Ссылка та же.', 4000);
+  } catch (e) {
+    busy = false; renderBar();
+    var c = e && e.code;
+    if (c === 'conflict') msg('Страницу уже обновили. Она сейчас перезагрузится, правки этой сессии не сохранились.');
+    else if (c === 'not_writer' || c === 'not_granted' || c === 'not_declared' || c === 'consent_required'){ msg('Здесь только просмотр: сохранять нельзя.'); bar.querySelectorAll('button').forEach(function(b){ b.remove(); }); exitEditSoft(); }
+    else if (c === 'rate_limited') msg('Слишком часто. Подожди минуту и сохрани снова.');
+    else if (c === 'too_large') msg('Страница слишком большая для сохранения.');
+    else msg('Не сохранилось (' + (c || 'ошибка') + '). Попробуй ещё раз.');
+  }
+}
+function exitEditSoft(){ editing = false; document.body.classList.remove('editing'); setEditable(false); controls(false); }
+
+async function initEdit(){
+  if (!window.claude || typeof window.claude.use !== 'function') return;
+  var U = null;
+  try { A = await window.claude.use('artifact'); U = await window.claude.use('user'); } catch (e) { return; }
+  if (!A || !U) return;
+  var can = false;
+  try { can = await U.canEdit(); } catch (e) {}
+  if (!can) return;
+  bar = document.createElement('div'); bar.className = 'edbar';
+  var m = document.createElement('span'); m.className = 'msg'; m.hidden = true; m.setAttribute('role','status');
+  bar.appendChild(m); document.body.appendChild(bar);
+  renderBar();
+}
+
+bindBasics();
+initEdit();
+})();
+</script>
+</body></html>
